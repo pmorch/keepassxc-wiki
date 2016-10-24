@@ -1,4 +1,4 @@
-#### Install the building tools
+### Install the building toolchain
 **You can skip this step if you have a working C/C++ toolchain (gcc, g++, cmake and make)**
 
 On Debian/Ubuntu you can install them with:
