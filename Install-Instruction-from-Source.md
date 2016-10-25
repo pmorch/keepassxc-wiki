@@ -30,7 +30,7 @@ Navigate to the path you have downloaded KeePassXR and type these commands:
 ```bash
 mkdir build
 cd build
-cmake -DWITH_TESTS=OFF
+cmake .. -DWITH_TESTS=OFF
 make
 ```
 
