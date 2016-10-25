@@ -25,3 +25,11 @@ Open a MSYS2 shell:
 ```
 pacman -S mingw-w64-$(uname -m)-qt5 mingw-w64-$(uname -m)-libgcrypt mingw-w64-$(uname -m)-zlib mingw-w64-$(uname -m)-libmicrohttpd
 ```
+
+### Update you Environment regularly
+
+Open a MSYS2 shell:
+
+```
+pacman -Syu
+```
