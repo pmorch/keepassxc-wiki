@@ -13,7 +13,7 @@ On Fedora/RHEL/CentOS you can install them with:
 sudo dnf install make automake gcc gcc-c++ cmake 
 ```
 
-#### Install the required dependencies
+### Install the required dependencies
 
 On Debian/Ubuntu you can install them with:
 
@@ -27,3 +27,16 @@ On Fedora/RHEL/CentOS you can install them with:
 sudo dnf install libmicrohttpd-devel libXi-devel libXtst-devel qt5-qtbase-devel qt5-qtx11extras qt5-qttools libgcrypt-devel zlib-devel
 ```
 
+### Update you Environment regularly
+
+On Debian/Ubuntu you can install them with:
+
+```bash
+sudo apt-get update; sudo apt-get upgrade
+```
+
+On Fedora/RHEL/CentOS you can install them with:
+
+```bash
+sudo dnf update; sudo dnf upgrade
+```
