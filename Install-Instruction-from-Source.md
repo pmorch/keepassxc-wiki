@@ -22,8 +22,10 @@ The following libraries are required:
 
 ### Build Steps
 
-To compile from source, open a **Terminal (on Linux/MacOS)** or a **MSYS2-MinGW shell (on Windows)** in the KeePassXR folder
+To compile from source, open a **Terminal (on Linux/MacOS)** or a **MSYS2-MinGW shell (on Windows)**<br/>
 **Note:** on Windows make sure you are using a **MINGW shell** by checking the label before the current path 
+
+Navigate to the path you have downloaded KeePassXR and type these commands:
 
 ```bash
 mkdir build
@@ -31,6 +33,8 @@ cd build
 cmake -DWITH_TESTS=OFF
 make
 ```
+
+**Note:** If you are on MacOS you must add this parameter to **Cmake**<br/> `-DCMAKE_PREFIX_PATH=/usr/local/Cellar/qt5/5.6.2/lib/cmake/`
 
 You will have the compiled KeePassXR binary inside the `./build/src/` directory.
 
