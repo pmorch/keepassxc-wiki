@@ -1,4 +1,4 @@
-#### Build Dependencies
+### Build Dependencies
 
 The following tools must exist within your PATH:
 
@@ -14,24 +14,35 @@ The following libraries are required:
 * libmicrohttpd
 * libxi, libxtst, qtx11extras (optional for auto-type on X11)
 
-#### Prepare the Building Environment
+### Prepare the Building Environment
 
 * [Building Environment on Linux](https://github.com/keepassxreboot/keepassx/wiki/Building-Environment-on-Linux)
 * [Building Environment on Windows](https://github.com/keepassxreboot/keepassx/wiki/Building-Environment-on-Windows)
 * [Building Environment on MacOS](https://github.com/keepassxreboot/keepassx/wiki/Building-Environment-on-MacOS)
 
-#### Build Steps
+### Build Steps
 
-To compile from source, open a terminal/cmd/MSYS2 in the KeePassXR folder
+To compile from source, open a **Terminal (on Linux/MacOS)** or a **MSYS2-MinGW shell (on Windows)** in the KeePassXR folder
+**Note:** on Windows make sure you are using a **MINGW shell** by checking the label before the current path 
 
 ```bash
 mkdir build
 cd build
-cmake -DWITH_TESTS=OFF ..
-make [-jX]
+cmake -DWITH_TESTS=OFF
+make
 ```
 
 You will have the compiled KeePassXR binary inside the `./build/src/` directory.
+
+Common cmake parameters
+```
+-DCMAKE_INSTALL_PREFIX=/usr/local
+-DCMAKE_VERBOSE_MAKEFILE=ON
+-DCMAKE_BUILD_TYPE=<RelWithDebInfo/Debug/Release>
+-DWITH_GUI_TESTS=ON
+```
+
+### Installation
 
 To install this binary execute the following:
 
@@ -39,4 +50,28 @@ To install this binary execute the following:
 sudo make install
 ```
 
-More detailed instructions available in the INSTALL file.
+You can specify the destination dir with
+```
+DESTDIR=X
+```
+
+### Packaging
+
+You can create a package to redistribute KeePassXR (zip, deb, rpm, dmg, etc..)
+```
+make package
+```
+
+### Testing
+
+You can perform test on the executable
+```
+make test
+```
+
+Common parameters:
+```
+CTEST_OUTPUT_ON_FAILURE=1
+ARGS+=-jX
+ARGS+="-E testgui"
+```
