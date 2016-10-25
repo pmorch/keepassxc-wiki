@@ -34,7 +34,7 @@ cmake -DWITH_TESTS=OFF
 make
 ```
 
-**Note:** If you are on MacOS you must add this parameter to **Cmake**<br/> `-DCMAKE_PREFIX_PATH=/usr/local/Cellar/qt5/5.6.2/lib/cmake/`
+**Note:** If you are on MacOS you must add this parameter to **Cmake**, with the Qt version you have installed<br/> `-DCMAKE_PREFIX_PATH=/usr/local/Cellar/qt5/5.6.2/lib/cmake/`
 
 You will have the compiled KeePassXR binary inside the `./build/src/` directory.
 
