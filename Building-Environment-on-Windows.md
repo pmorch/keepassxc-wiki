@@ -8,6 +8,8 @@
 
 ### Install the building toolchain
 
+This command will install the MinGW-W GCC compiler, Cmake and Binutils
+
 Open a MSYS2 shell:
 
 ```
@@ -15,6 +17,8 @@ pacman -S git make mingw-w64-$(uname -m)-gcc mingw-w64-$(uname -m)-binutils ming
 ```
 
 ### Install the required dependencies
+
+This command will install `qt5` `libgcrypt` `zlib` and `libmicrohttpd`
 
 Open a MSYS2 shell:
 
