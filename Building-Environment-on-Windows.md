@@ -26,6 +26,10 @@ Open a MSYS2 shell:
 pacman -S mingw-w64-$(uname -m)-qt5 mingw-w64-$(uname -m)-libgcrypt mingw-w64-$(uname -m)-zlib mingw-w64-$(uname -m)-libmicrohttpd
 ```
 
+Navigate to `C:\msys64\mingw32\share\cmake-3.6\Modules\Platform`  
+Locate the `Windows-GNU.cmake` file and rename it `Windows-GNU.cmake.fix`  
+then rename `Windows-GNU.cmake.orig` to `Windows-GNU.cmake`.
+
 ### Update you Environment regularly
 
 Open a MSYS2 shell:
