@@ -1,1 +1,1 @@
-Welcome to the KeePassX-Reboot wiki!
+Welcome to the KeePassXC wiki!
