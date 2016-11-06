@@ -2,7 +2,7 @@
 Please follow either the [Linux](Building-Environment-on-Linux), [MacOS](Building-Environment-on-MacOS), or [Windows](Building-Environment-on-Windows) guides to setup your environment.
 
 ### Prerequisites
-Obtain the following packages prior to beginning the coverage process: **gcov, lcov**
+Obtain the following packages prior to beginning the coverage process: **gcov** and **lcov**
 
 ### Build Process
 
