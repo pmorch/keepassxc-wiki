@@ -29,7 +29,7 @@ brew install libmicrohttpd
 
 ### Fix the QT5 Environment
 
-Copy the following line inside a text file and name it `fix_mac.sh`
+Copy the following line inside a text file and name it `fix_mac.sh` (by @rockihack)
 ```shell
 #!/bin/bash
 
