@@ -34,13 +34,18 @@ cmake .. -DWITH_TESTS=OFF
 make
 ```
 
-**Note:** If you are on MacOS you must add this parameter to **Cmake**, with the Qt version you have installed<br/> `-DCMAKE_PREFIX_PATH=/usr/local/Cellar/qt5/5.6.2/lib/cmake/`
-
-**Note:** If you are on GNU/Linux you must verify your system's default share folder and set it with `-DCMAKE_INSTALL_DATADIR="/usr/share"` (`/usr/share` is the default on Debian/Ubuntu)
-
 You will have the compiled KeePassXR binary inside the `./build/src/` directory.
 
-Common cmake parameters
+
+**Note on MacOS:** 
+ - You must add this parameter to **Cmake**, with the Qt version you have installed<br/> `-DCMAKE_PREFIX_PATH=/usr/local/Cellar/qt5/5.6.2/lib/cmake/`
+ - You can edit the Qt folder for **macdeployqt** by setting the following parameter `-DQT_BINARY_DIR=/path/to/qt5/bin` <br/>if you installed Qt5 with **homebrew** you can skip this.
+
+**Note on GNU/Linux:**
+ - On some distro based on Debian/Ubuntu, you should verify your system's default share folder and set it with `-DCMAKE_INSTALL_DATADIR="/usr/share"` (`/usr/share` is the default on Debian/Ubuntu)
+
+
+**Common cmake parameters**
 ```
 -DCMAKE_INSTALL_PREFIX=/usr/local
 -DCMAKE_VERBOSE_MAKEFILE=ON
