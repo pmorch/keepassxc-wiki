@@ -45,7 +45,8 @@ You will have the compiled KeePassXR binary inside the `./build/src/` directory.
  - On some distro based on Debian/Ubuntu, you should verify your system's default share folder and set it with `-DCMAKE_INSTALL_DATADIR="/usr/share"` (`/usr/share` is the default on Debian/Ubuntu)
 
 **Note on Windows:**
- - If you have another compiler installed (like Visual Studio), add this parameter to Cmake `-G "MSYS Makefiles"`
+ - If you have another compiler installed (like Visual Studio), add this parameter to Cmake  
+`-G "MSYS Makefiles"`
 
 **Common cmake parameters**
 ```
