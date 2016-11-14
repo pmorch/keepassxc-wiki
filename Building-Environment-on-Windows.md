@@ -26,9 +26,11 @@ Open a MSYS2 shell:
 pacman -S mingw-w64-$(uname -m)-qt5 mingw-w64-$(uname -m)-libgcrypt mingw-w64-$(uname -m)-zlib mingw-w64-$(uname -m)-libmicrohttpd
 ```
 
-Navigate to `C:\msys64\mingw64\share\cmake-3.6\Modules\Platform`  
-Locate the `Windows-GNU.cmake` file and rename it `Windows-GNU.cmake.fix`  
-then rename `Windows-GNU.cmake.orig` to `Windows-GNU.cmake`.
+### Fix the environment
+[Revert this patch with the following step](https://github.com/Alexpux/MINGW-packages/blob/2627fe6cdcf43a39d66f7b869655d88e6ef934a9/mingw-w64-cmake/do-not-generate-import-library-for-executables.patch)
+- Navigate to `C:\msys64\mingw64\share\cmake-3.6\Modules\Platform`  
+- Locate the `Windows-GNU.cmake` file and rename it `Windows-GNU.cmake.fix`  
+- Rename `Windows-GNU.cmake.orig` to `Windows-GNU.cmake`.
 
 ### Update you Environment regularly
 
