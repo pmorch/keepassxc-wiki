@@ -1,7 +1,9 @@
 When using autotype you can set up a custom sequence that will be executed by KeePassXC when Autotype is performed.
 
-A sequence is list of actions and characters. All the sequence is Case-Insensitive (but in this guide everything will be UpperCase).<br/>
-Actions are keywords and keys placed inside curly bracket `{` and `}`.
+A sequence is list of actions and characters.<br/>
+Actions are keywords and keys placed inside curly bracket `{` and `}`.<br/>
+All the actions in the sequence are Case-Insensitive (except for Custom Entry Attributes). This means that `{USERname}` is equal to `{USERNAME}` but `{CUSTOM}` isn't equal to `{Custom}`<br/>
+If an action is invalid (it's not a key or a keyword and it's not a defined custom attributes), nothing will be printed.
 
 An example of a key is `{ENTER}`.<br/>
 An example of a keyword is `{USERNAME}`.<br/>
@@ -28,7 +30,11 @@ This keyword will be replaced by the **URL** field in the selected Entry
 This keyword will be replaced by the **notes** field in the selected Entry
 
 #### Custom Attributes
-Currently Autotype don't support custom attributes.
+If you define Custom Attributes in your Entry, the Autotype will be able to access them with the Attribute name as an Action.
+
+For example: I define a new custom attribute named `PIN` with value `12345`. Now I can Autotype it with the action `{PIN}`.
+
+**NOTE**: Custom Attribute name are CaseSensitive
 
 ### Special Keyword
 #### {DELAY n}
