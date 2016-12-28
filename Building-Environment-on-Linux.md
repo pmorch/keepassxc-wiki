@@ -24,7 +24,7 @@ sudo apt-get install libmicrohttpd-dev libxi-dev libxtst-dev qtbase5-dev libqt5x
 On Fedora/RHEL/CentOS you can install them with:
 
 ```bash
-sudo dnf install libmicrohttpd-devel libXi-devel libXtst-devel qt5-qtbase-devel qt5-qtx11extras qt5-qttools libgcrypt-devel zlib-devel
+sudo dnf install libmicrohttpd-devel libXi-devel libXtst-devel qt5-qtbase-devel qt5-linguist qt5-qtx11extras qt5-qtx11extras-devel qt5-qttools libgcrypt-devel zlib-devel
 ```
 
 ### Update you Environment regularly
