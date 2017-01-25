@@ -9,15 +9,17 @@
 -  Update translations (run `share/translations/update.sh`)
 -  Remove translations that don't meet the 80% criteria from Transifex
 -  Build Mac OS X bundle
-  - Boot Mac OS X 10.7 and follow instructions in INSTALL
+  - Boot Mac OS X 10.7 and follow instructions in INSTALL, alternatively you can use whatever version of macOS with the `export MACOSX_DEPLOYMENT_TARGET=10.7` and the cmake flag `-DCMAKE_CXX_FLAGS="-mmacosx-version-min=10.7"`
     - `cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_OSX_ARCHITECTURES=x86_64 -DCMAKE_VERBOSE_MAKEFILE=ON -DWITH_GUI_TESTS=ON -DWITH_CXX11=OFF`
     - `make package`
     - `make test`
- - Build Window bundle
+- Build Window bundle
   - Boot Windows 7 and follow instructions in INSTALL
     - `cmake -G"MSYS Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_VERBOSE_MAKEFILE=ON -DWITH_GUI_TESTS=ON -DCMAKE_PREFIX_PATH=/opt/windows_32`
     - `make package`
     - `make test`
+- Build AppImage/source-tarball bundle with the distribution script
+- Build Snap bundle
 - Check binaries against virus scanners with [VirusTotal](https://www.virustotal.com/)
 - Create a `tag` for the git repository signed with a Release Key
    - `git tag -s $VERSION`
