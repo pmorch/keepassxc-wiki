@@ -15,9 +15,8 @@
     - `make test`
 - Build Window bundle
   - Boot Windows 7 and follow instructions in INSTALL
-    - `cmake -G"MSYS Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_VERBOSE_MAKEFILE=ON -DWITH_GUI_TESTS=ON -DCMAKE_PREFIX_PATH=/opt/windows_32`
+    - `cmake -G"MSYS Makefiles" -DCMAKE_BUILD_TYPE=Release -DWITH_TESTS=OFF -DWITH_XC_AUTOTYPE=ON
     - `make package`
-    - `make test`
 - Build AppImage/source-tarball bundle with the distribution script
 - Build Snap bundle
 - Check binaries against virus scanners with [VirusTotal](https://www.virustotal.com/)
