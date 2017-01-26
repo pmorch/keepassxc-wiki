@@ -23,14 +23,13 @@ This command will install `qt5` `libgcrypt` `zlib` and `libmicrohttpd`
 Open an MSYS2 shell:
 
 ```
-pacman -S mingw-w64-$(uname -m)-qt5-static mingw-w64-$(uname -m)-libgcrypt mingw-w64-$(uname -m)-zlib mingw-w64-$(uname -m)-libmicrohttpd
+pacman -S mingw-w64-$(uname -m)-qt5 mingw-w64-$(uname -m)-libgcrypt mingw-w64-$(uname -m)-zlib mingw-w64-$(uname -m)-libmicrohttpd
 ```
 
-Then add these lines to your `/etc/profile` and restart your terminal:
+Then add this line to your `/etc/profile` and restart your terminal:
 
 ```
 export PATH="/mingw64/bin/:$PATH"
-export CMAKE_PREFIX_PATH="/mingw64/qt5-static/lib/cmake"
 ```
 
 ### Update you Environment regularly
