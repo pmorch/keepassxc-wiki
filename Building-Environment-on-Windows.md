@@ -8,9 +8,9 @@
 
 ### Install the building toolchain
 
-This command will install the MinGW-W GCC compiler, Cmake and Binutils
+This command will install the MinGW-W GCC compiler, CMake and Binutils
 
-Open a MSYS2 shell:
+Open an MSYS2 shell:
 
 ```
 pacman -S git make mingw-w64-$(uname -m)-gcc mingw-w64-$(uname -m)-binutils mingw-w64-$(uname -m)-cmake
@@ -20,17 +20,18 @@ pacman -S git make mingw-w64-$(uname -m)-gcc mingw-w64-$(uname -m)-binutils ming
 
 This command will install `qt5` `libgcrypt` `zlib` and `libmicrohttpd`
 
-Open a MSYS2 shell:
+Open an MSYS2 shell:
 
 ```
-pacman -S mingw-w64-$(uname -m)-qt5 mingw-w64-$(uname -m)-libgcrypt mingw-w64-$(uname -m)-zlib mingw-w64-$(uname -m)-libmicrohttpd
+pacman -S mingw-w64-$(uname -m)-qt5-static mingw-w64-$(uname -m)-libgcrypt mingw-w64-$(uname -m)-zlib mingw-w64-$(uname -m)-libmicrohttpd
 ```
 
-### Fix the environment
-[Revert this patch with the following step](https://github.com/Alexpux/MINGW-packages/blob/2627fe6cdcf43a39d66f7b869655d88e6ef934a9/mingw-w64-cmake/do-not-generate-import-library-for-executables.patch)
-- Navigate to `C:\msys64\mingw64\share\cmake-3.6\Modules\Platform`  
-- Locate the `Windows-GNU.cmake` file and rename it `Windows-GNU.cmake.fix`  
-- Rename `Windows-GNU.cmake.orig` to `Windows-GNU.cmake`.
+Then add these lines to your `/etc/profile` and restart your terminal:
+
+```
+export PATH="/mingw64/bin/:$PATH"
+export CMAKE_PREFIX_PATH="/mingw64/qt5-static/lib/cmake"
+```
 
 ### Update you Environment regularly
 
