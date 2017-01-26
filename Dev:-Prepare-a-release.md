@@ -1,5 +1,7 @@
 ## How to prepare a new release
 
+**This Guide is outdated**
+
 -  Make sure all closed bugs and features have a target version
 -  Postpone all open issues and PR targeted at this version
 -  Close the version Github Project
