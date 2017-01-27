@@ -12,12 +12,11 @@
 -  Remove translations that don't meet the 80% criteria from Transifex
 -  Build Mac OS X bundle
   - Boot Mac OS X 10.7 and follow instructions in INSTALL, alternatively you can use whatever version of macOS with the `export MACOSX_DEPLOYMENT_TARGET=10.7` and the cmake flag `-DCMAKE_CXX_FLAGS="-mmacosx-version-min=10.7"`
-    - `cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_OSX_ARCHITECTURES=x86_64 -DCMAKE_VERBOSE_MAKEFILE=ON -DWITH_GUI_TESTS=ON -DWITH_CXX11=OFF`
+    - `cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_OSX_ARCHITECTURES=x86_64 -DCMAKE_VERBOSE_MAKEFILE=ON -DWITH_GUI_TESTS=OFF -DWITH_CXX11=OFF -DWITH_XC_AUTOTYPE=ON`
     - `make package`
-    - `make test`
 - Build Window bundle
   - Boot Windows 7 and follow instructions in INSTALL
-    - `cmake -G"MSYS Makefiles" -DCMAKE_BUILD_TYPE=Release -DWITH_TESTS=OFF -DWITH_XC_AUTOTYPE=ON
+    - `cmake -G"MSYS Makefiles" -DCMAKE_BUILD_TYPE=Release -DWITH_TESTS=OFF -DWITH_XC_AUTOTYPE=ON`
     - `make package`
 - Build AppImage/source-tarball bundle with the distribution script
 - Build Snap bundle
