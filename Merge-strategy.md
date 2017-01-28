@@ -2,7 +2,7 @@ Our general Git workflow is inspired by [Git flow](https://www.atlassian.com/git
 
 We have two historical (long-lived) branches `master` and `develop`. The top revision of the `master` branch always represents the latest released version whereas `develop` points to the latest development version. Both branches must always be in a compilable and usable state and all tests must pass.
 
-Additionally to these two branches, there are several short-lived branches with different prefixes:
+In addition to these two branches, there are several short-lived branches with different prefixes:
 
 - **`feature/<issue#-description>`**: new features or non-critical fixes<br>
    *Branch from:* `develop`<br>
