@@ -17,7 +17,7 @@ In addition to these two branches, there are several short-lived branches with d
    *Branch from:* `develop`<br>
    *Merge back into:* `develop`
 
-Merging from a short-lived branch into a historical should be done using `git merge --no-ff` to preserve the origin of those commits. For instance, if a `feature/*` branch is merged into `develop` it should be done with a merge commit.
+Merging from a short-lived branch into a historical should be done using `git merge --no-ff` to preserve the origin of those commits. For instance, if a `feature/*` branch is merged into `develop`, it should be done with a merge commit.
 
 Merging from historical branches into short-lived branches cannot be done without a merge commit, so it is preferred to keep the short-lived branch rebased on top of the long-lived branch (i.e., rebase your `feature` onto the `develop` branch). If that is not possible because the branch is used by multiple contributors, a normal merge commit is acceptable.
 
