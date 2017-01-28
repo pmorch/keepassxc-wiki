@@ -1,4 +1,4 @@
-Our general Git worflow is inspired by [Git flow](https://www.atlassian.com/git/tutorials/comparing-workflows#gitflow-workflow).
+Our general Git workflow is inspired by [Git flow](https://www.atlassian.com/git/tutorials/comparing-workflows#gitflow-workflow).
 
 We have two historical (long-lived) branches `master` and `develop`. The top revision of the `master` branch always represents the latest released version whereas `develop` points to the latest development version. Both branches must always be in a compilable and usable state and all tests must pass.
 
