@@ -19,7 +19,7 @@ Additionally to these two branches, there are several short-lived branches with 
 
 Merging from a short-lived branch into a historical should be done using `git merge --no-ff` to preserve the origin of those commits. For instance, if a `feature/*` branch is merged into `develop` it should be done with a merge commit.
 
-Merging from historical branches into short-lived branches cannot be done without a merge commit, so it is preferred to keep to short-lived branch rebased on top of the long-lived branch (i.e., rebase your `feature` onto the `develop` branch). If that is not possible because the branch is used by multiple contributors, a normal merge commit is acceptable.
+Merging from historical branches into short-lived branches cannot be done without a merge commit, so it is preferred to keep the short-lived branch rebased on top of the long-lived branch (i.e., rebase your `feature` onto the `develop` branch). If that is not possible because the branch is used by multiple contributors, a normal merge commit is acceptable.
 
 Merging a `hotfix` into the `release` branch should be done using `git merge --ff-only` or `git rebase (--onto)` and then `git merge --ff-only` to avoid creating a merge commit. The same applies when merging between other short-lived branches. Avoid merge commits where possible. The exception is when the merged branch contains a significant number of commits and preserving the two branches in the history makes sense (*significant* is subjective).
 
