@@ -50,7 +50,7 @@ sudo ./fix_mac.sh
 ```
 
 
-### Update you environment regularly
+### Update your environment regularly
 
 Open a Terminal:
 
