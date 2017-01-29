@@ -1,4 +1,4 @@
-### Install the building environment
+### Install the build environment
 
 Install Homebrew (it is the easiest way to install the required packages on macOS):
 ```
