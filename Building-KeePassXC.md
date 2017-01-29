@@ -2,7 +2,7 @@
 
 First, make sure you have your build environment set up correctly (see guide for [Linux](Set-up-Build-Environment-on-Linux), [OS X](Set-up-Build-Environment-on-OS-X) and [Windows](Set-up-Build-Environment-on-Windows)).
 
-## On Linux
+## Linux
 Download the sources from [keepassxc.org](https://keepassxc.org/download) and unpack them:
 ```
 tar xf keepassxc-*-src.tar.xz
@@ -26,8 +26,8 @@ If you don't want to install KeePassXC at all, you can also run it directly from
 ./src/keepassxc
 ```
 
-## On OS X
-Download and unpack the source code as described in the section [On Linux](#on-linux), change into the source code directory and run:
+## OS X
+Download and unpack the source code as described in the [Linux](#linux) section, change into the source code directory and run:
 ```
 mkdir build
 cd build
@@ -35,8 +35,8 @@ cmake -DCMAKE_OSX_ARCHITECTURES=x86_64 -DWITH_CXX11=OFF -DWITH_XC_AUTOTYPE=ON -D
 make -j8 package
 ```
 
-## On Windows
-In an Msys terminal, download and unpack the source code as described in the section [On Linux](#on-linux), change into the source code directory and run:
+## Windows
+In an Msys terminal, download and unpack the source code as described in the [Linux](#linux) section, change into the source code directory and run:
 
 ```
 mkdir build
@@ -46,7 +46,7 @@ make -j8 package
 ```
 
 # Building using the release-tool
-Starting with version 2.1.1, KeePassXC ships with a `release-tool` that automates building release packages from a specified release tag (the `--version parameter`). To see a help listing for the command, download and unpack the source code as described in the section [On Linux](#on-linux), change into the source directory and run
+Starting with version 2.1.1, KeePassXC ships with a `release-tool` that automates building release packages from a specified release tag (the `--version parameter`). To see a help listing for the command, download and unpack the source code as described in the [Linux](#linux) section, change into the source directory and run
 ```
 ./release-tool help
 ```
