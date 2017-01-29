@@ -32,7 +32,7 @@ Then add this line to your `/etc/profile` and restart your terminal:
 export PATH="/mingw64/bin/:$PATH"
 ```
 
-### Update you environment regularly
+### Update your environment regularly
 
 Open a MSYS2 shell:
 
