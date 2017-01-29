@@ -46,7 +46,7 @@ make -j8 package
 ```
 
 # Building using the release-tool
-Starting with version 2.1.1, KeePassXC ships with a `release-tool` that automates building release packages. To see a help listing for the command, download and unpack the source code as described in the section [On Linux](#on-linux), change into the source directory and run
+Starting with version 2.1.1, KeePassXC ships with a `release-tool` that automates building release packages from a specified release tag (the `--version parameter`). To see a help listing for the command, download and unpack the source code as described in the section [On Linux](#on-linux), change into the source directory and run
 ```
 ./release-tool help
 ```
@@ -128,3 +128,12 @@ Options:
 If you are not a KeePassXC maintainer, the only interesting command for you is `release-tool build`. This will automate the compilation and packaging steps described [above](#building-keepassxc-manually) and also perform a few more packaging steps such as exporting a source tarball and building an [AppImage](http://appimage.org/) on Linux.
 
 When not specified otherwise, it will create a directory called `release` containing the build directory, a source tarball and the packaged binary bundles. On Linux, there will also be a directory `release-bin` inside the `release` directory, containing stripped versions of all the compiled binaries without additional dependencies.
+
+The `release-tool` also allows you to build KeePassXC inside a Docker container on Linux. This is important when building a cross-platform `AppImage` to ensure the used library versions are not too new. To build the needed Docker image, run
+```
+docker build -t keepassxc/ubuntu:14.04 .
+```
+inside the source directory. This will build a Docker image with the name `keepassxc/ubuntu:14.04` from the `Dockerfile` provided inside the directory. You can then start the build process with
+```
+./release-tool build -v VERSION -d keepassxc/ubuntu:14.04
+```
