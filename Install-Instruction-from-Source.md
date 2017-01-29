@@ -1,3 +1,5 @@
+**This guide is outdated. Please use [our new guide](Building-KeePassXC) instead.**
+
 ### Build Dependencies
 
 The following tools must exist within your PATH:
