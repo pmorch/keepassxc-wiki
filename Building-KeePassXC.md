@@ -38,3 +38,87 @@ cd build
 cmake -G"MSYS Makefiles" -DWITH_XC_AUTOTYPE=ON -DWITH_XC_HTTP=ON -DCMAKE_BUILD_TYPE=Release ..
 make -j8 package
 ```
+
+# Building using the release-tool
+Starting with version 2.1.1, KeePassXC ships with a `release-tool` that automates building release packages. To see a help listing for the command, download and unpack the source code as described in the section [On Linux](#on-linux), change into the source directory and run
+```
+./release-tool help
+```
+The `release-tool` has three subcommands. You can get help for each by running
+```
+./release-tool help <COMMAND>
+```
+Sub commands are:
+### merge (only useful for KeePassXC maintainers)
+```
+$ ./release-tool help merge
+KeePassXC Release Preparation Helper
+Copyright (C) 2017 KeePassXC Team <https://keepassxc.org/>
+
+Usage: release-tool merge [options]
+
+Merge release branch into main branch and create release tags
+
+Options:
+  -v, --version        Release version number or name (required)
+  -a, --app-name       Application name (default: 'KeePassXC')
+  -s, --source-dir     Source directory (default: '.')
+  -g, --gpg-key        GPG key used to sign the merge commit and release tag,
+                       leave empty to let Git choose your default key
+                       (default: '')
+  -r, --release-branch Source release branch to merge from (default: 'release/VERSION')
+      --target-branch  Target branch to merge to (default: 'master')
+  -t, --tag-name       Override release tag name (defaults to version number)
+  -h, --help           Show this help
+```
+### build
+```
+$ ./release-tool help build
+KeePassXC Release Preparation Helper
+Copyright (C) 2017 KeePassXC Team <https://keepassxc.org/>
+
+**Usage:** release-tool build [options]
+
+Build and package binary release from sources
+
+Options:
+  -v, --version           Release version number or name (required)
+  -a, --app-name          Application name (default: 'KeePassXC')
+  -s, --source-dir        Source directory (default: '.')
+  -o, --output-dir        Output directory where to build the release
+                          (default: 'release')
+  -t, --tag-name          Release tag to check out (defaults to version number)
+  -b, --build             Build sources after exporting release
+  -d, --docker-image      Use the specified Docker image to compile the application.
+                          The image must have all required build dependencies installed.
+                          This option has no effect if --build is not set.
+      --container-name    Docker container name (default: 'keepassxc-build-container')
+                          The container must not exist already
+  -c, --cmake-options     Additional CMake options for compiling the sources
+      --compiler          Compiler to use (default: 'g++')
+  -m, --make-options      Make options for compiling sources (default: '-j8')
+  -i, --install-prefix    Install prefix (default: '/usr/local')
+  -p, --plugins           Space-separated list of plugins to build
+                          (default: autotype)
+  -n, --no-source-tarball Don't build source tarball
+  -h, --help              Show this help
+```
+### sign (only useful for KeePassXC maintainers)
+```
+$ ./release-tool help sign
+KeePassXC Release Preparation Helper
+Copyright (C) 2017 KeePassXC Team <https://keepassxc.org/>
+
+Usage: release-tool sign [options]
+
+Sign previously compiled release packages
+
+Options:
+  -f, --files       Files to sign (required)
+  -g, --gpg-key     GPG key used to sign the files (default: 'CFB4C2166397D0D2')
+  -h, --help        Show this help
+```
+
+If you are not a KeePassXC maintainer, the only interesting command for you is `release-tool build`. This will automate the compilation and packaging steps described [above](#building-keepassxc-manually) and also perform a few more packaging steps such as exporting a source tarball and building an [AppImage](http://appimage.org/) on Linux.
+
+When not specified otherwise, it will create a directory called `release` containing the build directory, the source tarball and the packaged binary bundles. On Linux, there will also be a directory `release-bin` inside the `release` directory, containing stripped versions of all the compiled binaries without additional dependencies.
