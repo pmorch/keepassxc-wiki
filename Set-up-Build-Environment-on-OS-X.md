@@ -5,7 +5,7 @@ Install Homebrew (it is the easiest way to install the required packages on macO
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-### Install the building toolchain
+### Install the C++ toolchain
 
 This command will install Cmake
 
@@ -50,7 +50,7 @@ sudo ./fix_mac.sh
 ```
 
 
-### Update you Environment regularly
+### Update you environment regularly
 
 Open a Terminal:
 
