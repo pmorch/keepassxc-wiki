@@ -1,4 +1,4 @@
-### Install the building environment
+### Install the build environment
 
 * Download MSYS2 64bit: http://msys2.github.io/
 * Start MSYS2 shell
@@ -6,7 +6,7 @@
 * Restart MSYS2 shell
 * Update all packages: `pacman -Syu` <br/>If tells you to close the shell, close and reupdate the package (until you are done)
 
-### Install the building toolchain
+### Install the C++ toolchain
 
 This command will install the MinGW-W GCC compiler, CMake and Binutils
 
@@ -32,10 +32,10 @@ Then add this line to your `/etc/profile` and restart your terminal:
 export PATH="/mingw64/bin/:$PATH"
 ```
 
-### Update you Environment regularly
+### Update you environment regularly
 
 Open a MSYS2 shell:
 
 ```
-pacman -Syu
+pacman -Syyuu
 ```
