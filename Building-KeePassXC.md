@@ -41,7 +41,7 @@ Change the value of `-DCMAKE_PREFIX_PATH` according to your installed Qt version
 
 - `-DQT_BINARY_DIR=/path/to/qt5/bin`.
 
-If you installed Qt5 with `homebrew`, you can skip this.
+If you installed Qt5 with `homebrew`, you can skip this step.
 
 ## Windows
 In an Msys terminal, download and unpack the source code as described in the [Linux](#linux) section, change into the source code directory and run:
