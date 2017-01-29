@@ -9,7 +9,7 @@ If not already done, create a new release branch `release/x.y.z` on which you
 
 Merge the release branch into `master` using [`release-tool merge`](Building-KeePassXC#building-using-the-release-tool). Make sure you sign the release tag using either our GPG release key (`CFB4C2166397D0D2`) or your own trusted GPG key.
 
-When done, merge `master` back into develop and push all changes as well as the new release tag
+When done, merge `master` back into `develop` and push all changes as well as the new release tag.
 
 ## Building the binaries:
 ### Linux
