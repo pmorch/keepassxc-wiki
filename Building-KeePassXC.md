@@ -83,7 +83,7 @@ $ ./release-tool help build
 KeePassXC Release Preparation Helper
 Copyright (C) 2017 KeePassXC Team <https://keepassxc.org/>
 
-**Usage:** release-tool build [options]
+Usage: release-tool build [options]
 
 Build and package binary release from sources
 
