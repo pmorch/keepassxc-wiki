@@ -31,9 +31,15 @@ Download and unpack the source code as described in the [Linux](#linux) section,
 ```
 mkdir build
 cd build
-cmake -DCMAKE_OSX_ARCHITECTURES=x86_64 -DWITH_CXX11=OFF -DWITH_XC_AUTOTYPE=ON -DWITH_XC_HTTP=ON -DCMAKE_BUILD_TYPE=Release ..
+cmake -DCMAKE_OSX_ARCHITECTURES=x86_64 -DWITH_CXX11=OFF \
+  -DWITH_XC_AUTOTYPE=ON -DWITH_XC_HTTP=ON -DCMAKE_BUILD_TYPE=Release \
+  -DCMAKE_PREFIX_PATH=/usr/local/Cellar/qt5/5.6.2/lib/cmake/ ..
 make -j8 package
 ```
+### Notes:
+Change the value of `-DCMAKE_PREFIX_PATH` according to your installed Qt version. You can change the Qt folder for `macdeployqt` by setting the following parameter `-DQT_BINARY_DIR=/path/to/qt5/bin`.
+
+If you installed Qt5 with `homebrew`, you can skip this.
 
 ## Windows
 In an Msys terminal, download and unpack the source code as described in the [Linux](#linux) section, change into the source code directory and run:
