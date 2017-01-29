@@ -7,7 +7,7 @@ If not already done, create a new release branch `release/x.y.z` on which you
   - Bump the version number in `CMakeLists.txt`
   - Update the `CHANGELOG`
 
-Merge the release branch into `master` using [`release-tool merge`](Building-KeePassXC#building-using-the-release-tool). Make sure you sign the release tag using either our GPG release key (CFB4C2166397D0D2) or your own trusted GPG key.
+Merge the release branch into `master` using [`release-tool merge`](Building-KeePassXC#building-using-the-release-tool). Make sure you sign the release tag using either our GPG release key (`CFB4C2166397D0D2`) or your own trusted GPG key.
 
 When done, merge `master` back into develop and push all changes as well as the new release tag
 
@@ -34,7 +34,7 @@ make package
 ```
 
 ## Signing release packages
-Sign all generated release packages with `release-tool sign` and our KeePassXC GPG release key CFB4C2166397D0D2 (DO NOT use your own GPG key!).
+Sign all generated release packages with `release-tool sign` and our KeePassXC GPG release key `CFB4C2166397D0D2` (DO NOT use your own GPG key!).
 
 ## Distribution
 Before distributing any binaries, check them against virus scanners with [VirusTotal](https://www.virustotal.com/).
