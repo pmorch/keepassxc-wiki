@@ -37,7 +37,9 @@ cmake -DCMAKE_OSX_ARCHITECTURES=x86_64 -DWITH_CXX11=OFF \
 make -j8 package
 ```
 ### Notes:
-Change the value of `-DCMAKE_PREFIX_PATH` according to your installed Qt version. You can change the Qt folder for `macdeployqt` by setting the following parameter `-DQT_BINARY_DIR=/path/to/qt5/bin`.
+Change the value of `-DCMAKE_PREFIX_PATH` according to your installed Qt version. You can change the Qt folder for `macdeployqt` by setting the following parameter:
+
+- `-DQT_BINARY_DIR=/path/to/qt5/bin`.
 
 If you installed Qt5 with `homebrew`, you can skip this.
 
