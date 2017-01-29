@@ -16,11 +16,11 @@ sudo dnf install make automake gcc-c++ cmake
 On Arch Linux:
 
 ```bash
-pacman -S cmake make gcc
+sudo pacman -S cmake make gcc
 ```
 or
 ```bash
-pacman -S cmake make gcc-multilib
+sudo pacman -S cmake make gcc-multilib
 ```
 
 ### Install the required dependencies
@@ -39,7 +39,7 @@ sudo dnf install libmicrohttpd-devel libXi-devel libXtst-devel qt5-qtbase-devel 
 
 On Arch Linux:
 ```bash
-pacman -S libmicrohttpd qt5-x11extras qt5-base qt5-tools
+sudo pacman -S libmicrohttpd qt5-x11extras qt5-base qt5-tools
 ```
 
 ### Update your environment regularly
@@ -59,5 +59,5 @@ sudo dnf update && sudo dnf upgrade
 On Arch Linux
 
 ```bash
-pacman -Syyuu
+sudo pacman -Syyuu
 ```
