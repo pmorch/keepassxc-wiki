@@ -29,6 +29,10 @@ If you don't want to install KeePassXC at all, you can also run it directly from
 ### Notes:
 If you are experiencing issues with icons not showing up in the KeePassXC user interface, you may want to set the data directory during compilation manually with the following CMake parameter:
 
+- `-DCMAKE_INSTALL_DATADIR="$HOME/.local/share"`
+
+or
+
 - `-DCMAKE_INSTALL_DATADIR="/usr/share"`
 
 ## OS X
