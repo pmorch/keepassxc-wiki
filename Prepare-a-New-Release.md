@@ -29,7 +29,7 @@ and then build and package KeePassXC manually:
 ```
 mkdir build
 cd build
-cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_OSX_ARCHITECTURES=x86_64 -DWITH_GUI_TESTS=OFF -DWITH_CXX11=OFF -DWITH_XC_AUTOTYPE=ON` -DCMAKE_CXX_FLAGS="-mmacosx-version-min=10.7 ..
+cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_OSX_ARCHITECTURES=x86_64 -DWITH_GUI_TESTS=OFF -DWITH_CXX11=OFF -DWITH_XC_AUTOTYPE=ON -DCMAKE_CXX_FLAGS="-mmacosx-version-min=10.7" ..
 make package
 ```
 
