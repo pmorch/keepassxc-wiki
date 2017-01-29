@@ -47,7 +47,8 @@ In an Msys terminal, download and unpack the source code as described in the [Li
 ```
 mkdir build
 cd build
-cmake -G"MSYS Makefiles" -DWITH_XC_AUTOTYPE=ON -DWITH_XC_HTTP=ON -DCMAKE_BUILD_TYPE=Release ..
+cmake -G"MSYS Makefiles" -DWITH_XC_AUTOTYPE=ON -DWITH_XC_HTTP=ON \
+  -DCMAKE_BUILD_TYPE=Release ..
 make -j8 package
 ```
 
