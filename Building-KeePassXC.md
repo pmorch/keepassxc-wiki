@@ -45,6 +45,12 @@ cmake -G"MSYS Makefiles" -DWITH_XC_AUTOTYPE=ON -DWITH_XC_HTTP=ON -DCMAKE_BUILD_T
 make -j8 package
 ```
 
+# Running the unit tests
+If you compiled KeePassXC with the CMake flags `-DWITH_TESTS=ON` and `-DWITH_GUI_TESTS=ON`, you can run our unit test suite with
+```
+make test
+```
+
 # Building using the release-tool
 Starting with version 2.1.1, KeePassXC ships with a `release-tool` that automates building release packages from a specified release tag (the `--version parameter`). To see a help listing for the command, download and unpack the source code as described in the [Linux](#linux) section, change into the source directory and run
 ```
