@@ -42,7 +42,7 @@ On Arch Linux:
 pacman -S libmicrohttpd qt5-x11extras qt5-base qt5-tools
 ```
 
-### Update you environment regularly
+### Update your environment regularly
 
 On Debian/Ubuntu:
 
