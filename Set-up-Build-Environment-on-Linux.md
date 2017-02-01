@@ -39,7 +39,7 @@ sudo dnf install libmicrohttpd-devel libXi-devel libXtst-devel qt5-qtbase-devel 
 
 On Arch Linux:
 ```bash
-sudo pacman -S libgcrypt qt5-x11extras qt5-base qt5-tools libxi libxtst libmicrohttpd
+sudo pacman -S libmicrohttpd libxi libxtst qt5-base qt5-x11extras qt5-tools libgcrypt zlib
 ```
 
 ### Update your environment regularly
