@@ -32,9 +32,9 @@ This keyword will be replaced by the **URL** field in the selected Entry
 This keyword will be replaced by the **notes** field in the selected Entry
 
 #### Custom Attributes
-If you define Custom Attributes in your Entry, the Autotype will be able to access them with the Attribute name as an Action.
+If you define Custom Attributes in your Entry, the Autotype will be able to access them with the Attribute name as an Action preceded by `S:` (*case Sensitive*).
 
-For example: I define a new custom attribute named `PIN` with value `12345`. Now I can Autotype it with the action `{PIN}`.
+For example: I define a new custom attribute named `PIN` with value `12345`. Now I can Autotype it with the action `{S:PIN}`.
 
 **NOTE**: Custom Attribute name are CaseSensitive
 
@@ -55,5 +55,35 @@ This keyword will clean the input field
 ### Key
 
 This is a list of all the possibile key you can use with Autotype:<br/>
-`tab enter up down left right insert ins delete del home end pgup pgdown backspace bs bksp break capslock esc help numlock ptrsc scrolllock
-add + subtract multiply divide ^ % ~ ( ) { }`
+`TAB  
+ENTER  
+SPACE  
+UP  
+DOWN  
+LEFT  
+RIGHT  
+INSERT INS  
+DELETE DEL  
+HOME  
+END  
+PGUP  
+PGDOWN  
+BACKSPACE BS BKSP  
+BREAK  
+CAPSLOCK  
+ESC  
+HELP  
+NUMLOCK  
+PTRSC  
+SCROLLLOCK  
+ADD +  
+SUBTRACT  
+MULTIPLY  
+DIVIDE  
+^  
+%  
+~  
+(  
+)  
+{  
+}`
