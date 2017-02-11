@@ -9,7 +9,7 @@ tar xf keepassxc-*-src.tar.xz
 ```
 or pull them directly from Git:
 ```
-git clone git@github.com:keepassxreboot/keepassxc.git
+git clone https://github.com/keepassxreboot/keepassxc.git
 ```
 Now change into the source directory and run the following commands:
 ```
