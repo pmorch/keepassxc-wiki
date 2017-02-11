@@ -21,17 +21,7 @@ When finished, build and submit the Snap Package using the provided `snapcraft.y
 Build and package KeePassXC using `release-tool build`.
 
 ### OS X
-Export the following environment variable:
-```
-export MACOSX_DEPLOYMENT_TARGET=10.7
-```
-and then build and package KeePassXC manually:
-```
-mkdir build
-cd build
-cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_OSX_ARCHITECTURES=x86_64 -DWITH_GUI_TESTS=OFF -DWITH_CXX11=OFF -DWITH_XC_AUTOTYPE=ON -DCMAKE_CXX_FLAGS="-mmacosx-version-min=10.7" ..
-make package
-```
+Build and package KeePassXC using `release-tool build`.
 
 ## Signing release packages
 Sign all generated release packages with `release-tool sign` and our KeePassXC GPG release key `CFB4C2166397D0D2` (DO NOT use your own GPG key!).
