@@ -42,7 +42,7 @@ mkdir build
 cd build
 cmake -DCMAKE_OSX_ARCHITECTURES=x86_64 -DWITH_CXX11=OFF \
   -DWITH_XC_AUTOTYPE=ON -DWITH_XC_HTTP=ON -DCMAKE_BUILD_TYPE=Release \
-  -DCMAKE_PREFIX_PATH=/usr/local/Cellar/qt5/5.6.2/lib/cmake ..
+  -DCMAKE_PREFIX_PATH=/usr/local/Cellar/qt5/5.8.0/lib/cmake ..
 make -j8 package
 ```
 ### Notes:
