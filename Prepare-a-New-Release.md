@@ -11,7 +11,7 @@ Merge the release branch into `master` using [`release-tool merge`](Building-Kee
 
 When done, merge `master` back into `develop` and push all changes as well as the new release tag.
 
-## Building the binaries:
+## Building the binaries
 ### Linux
 If not already done, [build a Docker image](Building-KeePassXC#building-inside-a-docker-container) from the provided `Dockerfile`. Then build and package KeePassXC with `release-tool build` using the created Docker image.
 
