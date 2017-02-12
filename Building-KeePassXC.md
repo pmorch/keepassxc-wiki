@@ -40,8 +40,8 @@ Download and unpack the source code as described in the [Linux](#linux) section,
 ```
 mkdir build
 cd build
-cmake -DCMAKE_OSX_ARCHITECTURES=x86_64 -DWITH_CXX11=OFF \
-  -DWITH_XC_AUTOTYPE=ON -DWITH_XC_HTTP=ON -DCMAKE_BUILD_TYPE=Release \
+cmake -DCMAKE_OSX_ARCHITECTURES=x86_64 -DCMAKE_BUILD_TYPE=Release \
+  -DWITH_XC_AUTOTYPE=ON -DWITH_XC_HTTP=ON \
   -DCMAKE_PREFIX_PATH=/usr/local/Cellar/qt5/5.8.0/lib/cmake ..
 make -j8 package
 ```
