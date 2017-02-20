@@ -18,12 +18,12 @@ pacman -S git make mingw-w64-$(uname -m)-gcc mingw-w64-$(uname -m)-binutils ming
 
 ### Install the required dependencies
 
-This command will install `qt5` `libgcrypt` `zlib` and `libmicrohttpd`
+This command will install `qt5` `libgcrypt` and `zlib`
 
 Open an MSYS2 shell:
 
 ```
-pacman -S mingw-w64-$(uname -m)-qt5 mingw-w64-$(uname -m)-libgcrypt mingw-w64-$(uname -m)-zlib mingw-w64-$(uname -m)-libmicrohttpd
+pacman -S mingw-w64-$(uname -m)-qt5 mingw-w64-$(uname -m)-libgcrypt mingw-w64-$(uname -m)-zlib
 ```
 
 If CMake is having trouble finding your compiler, add this line to your `/etc/profile` and restart your terminal:
