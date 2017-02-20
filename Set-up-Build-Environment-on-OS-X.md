@@ -24,7 +24,6 @@ Open a Terminal:
 ```
 brew install qt5
 brew install libgcrypt
-brew install libmicrohttpd
 ```
 
 ### Fix the QT5 Environment
