@@ -15,7 +15,7 @@ KeePassXC is a fork of [KeePassX](https://www.keepassx.org/) that [aims to incor
 - Automatic reload when the database changed on disk
 - KeePassHTTP support for use with [PassIFox](https://addons.mozilla.org/en-us/firefox/addon/passifox/) in Mozilla Firefox and [chromeIPass](https://chrome.google.com/webstore/detail/chromeipass/ompiailgknfdndiefoaoiligalphfdae) in Google Chrome or Chromium.
 
-For a full list of features and changes, read the [CHANGELOG](CHANGELOG) document.
+For a full list of features and changes, read the [CHANGELOG](https://github.com/keepassxreboot/keepassxc/blob/master/CHANGELOG) document.
 
 ### Note about KeePassHTTP
 KeePassHTTP is not a highly secure protocol and has certain flaws, which allow an attacker to decrypt your passwords when they manage to intercept communication between a KeePassHTTP server and PassIFox/chromeIPass over a network connection (see [here](https://github.com/pfn/keepasshttp/issues/258) and [here](https://github.com/keepassxreboot/keepassxc/issues/147)). KeePassXC therefore strictly limits communication between itself and the browser plugin to your local computer. As long as your computer is not compromised, your passwords are fairly safe that way, but still use it at your own risk!
