@@ -28,18 +28,18 @@ sudo pacman -S cmake make gcc-multilib
 On Debian/Ubuntu:
 
 ```bash
-sudo apt-get install libmicrohttpd-dev libxi-dev libxtst-dev qtbase5-dev libqt5x11extras5-dev qttools5-dev qttools5-dev-tools libgcrypt20-dev zlib1g-dev
+sudo apt-get install libxi-dev libxtst-dev qtbase5-dev libqt5x11extras5-dev qttools5-dev qttools5-dev-tools libgcrypt20-dev zlib1g-dev
 ```
 
 On Fedora/RHEL/CentOS:
 
 ```bash
-sudo dnf install libmicrohttpd-devel libXi-devel libXtst-devel qt5-qtbase-devel qt5-linguist qt5-qtx11extras qt5-qtx11extras-devel qt5-qttools libgcrypt-devel zlib-devel
+sudo dnf install libXi-devel libXtst-devel qt5-qtbase-devel qt5-linguist qt5-qtx11extras qt5-qtx11extras-devel qt5-qttools libgcrypt-devel zlib-devel
 ```
 
 On Arch Linux:
 ```bash
-sudo pacman -S libmicrohttpd libxi libxtst qt5-base qt5-x11extras qt5-tools libgcrypt zlib
+sudo pacman -S libxi libxtst qt5-base qt5-x11extras qt5-tools libgcrypt zlib
 ```
 
 ### Update your environment regularly
