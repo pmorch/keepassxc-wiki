@@ -1,6 +1,6 @@
 Welcome to the KeePassXC Wiki!
 
-KeePassXC (*KeePass Cross-platform Community Edition*) is a cross platform community-driven port of the windows application “KeePass Password Safe”.
+KeePassXC (*KeePass Cross-platform Community Edition*) is a cross platform community-driven port of the Windows application “KeePass Password Safe”.
 
 ## About
 KeePassXC is a fork of [KeePassX](https://www.keepassx.org/) that [aims to incorporate stalled pull requests, features, and bug fixes that have never made it into the main KeePassX repository](https://github.com/keepassxreboot/keepassx/issues/43).
