@@ -38,7 +38,7 @@ On Fedora/RHEL/CentOS:
 ```bash
 sudo dnf install libXi-devel libXtst-devel qt5-qtbase-devel \
     qt5-linguist qt5-qtx11extras qt5-qtx11extras-devel qt5-qttools \
-    libgcrypt-devel zlib-devel
+    libgcrypt-devel zlib-devel libyubikey ykpers
 ```
 
 On Arch Linux:
