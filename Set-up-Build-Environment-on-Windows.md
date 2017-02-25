@@ -13,7 +13,8 @@ This command will install the MinGW-W GCC compiler, CMake and Binutils
 Open an MSYS2 shell:
 
 ```
-pacman -S git make mingw-w64-$(uname -m)-gcc mingw-w64-$(uname -m)-binutils mingw-w64-$(uname -m)-cmake
+pacman -S git make mingw-w64-$(uname -m)-gcc \
+    mingw-w64-$(uname -m)-binutils mingw-w64-$(uname -m)-cmake
 ```
 
 ### Install the required dependencies
@@ -23,7 +24,8 @@ This command will install `qt5` `libgcrypt` and `zlib`
 Open an MSYS2 shell:
 
 ```
-pacman -S mingw-w64-$(uname -m)-qt5 mingw-w64-$(uname -m)-libgcrypt mingw-w64-$(uname -m)-zlib
+pacman -S mingw-w64-$(uname -m)-qt5 \
+    mingw-w64-$(uname -m)-libgcrypt mingw-w64-$(uname -m)-zlib
 ```
 
 If CMake is having trouble finding your compiler, add this line to your `/etc/profile` and restart your terminal:
