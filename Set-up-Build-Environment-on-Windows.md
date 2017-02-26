@@ -49,7 +49,7 @@ make install
 ```
 
 #### Download and install libykpers-1
-Go back to the previous directory and run the following commands in order to build libykpers-1:
+Go back to the previous directory (`cd ..`) and run the following commands in order to build libykpers-1:
 ```
 pacman -S libutil-linux-devel
 export LIBRARY_PATH=/usr/lib
@@ -61,7 +61,7 @@ cd ykpers-*
 make -j8
 make install
 ```
-`libutil-linux-devel` is a needed dependency for building a shared library (DLL). However, since `libuuid` is installed under the `/mingw64` prefix, we need to give the compiler some hints where to find it by setting the `LIBRARY_PATH` environment variable. Note that this needs to be done before (!) executing `./configure`.
+`libutil-linux-devel` is a needed dependency for building a shared library (DLL). However, `libuuid` is not installed under the `/mingw64` prefix, so we need to give the compiler some hints where to find it by setting the `LIBRARY_PATH` environment variable. Note that this needs to be done before (!) executing `./configure`.
 
 ### Update your environment regularly
 
