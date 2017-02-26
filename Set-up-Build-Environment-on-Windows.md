@@ -34,7 +34,7 @@ If CMake is having trouble finding your compiler, add this line to your `/etc/pr
 export PATH="/mingw64/bin/:$PATH"
 ```
 
-### Compile needed YubiKey libraries
+### Compile and install needed YubiKey libraries
 For compiling KeePassXC with YubiKey support, two libraries are needed which don't come with Msys2: libyubikey and libykpers-1.
 
 #### Download and compile libyubikey
