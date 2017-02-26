@@ -49,7 +49,7 @@ make install
 ```
 
 #### Download and install libykpers-1
-Go back to the previous directory and run the following commands:
+Go back to the previous directory and run the following commands in order to build libykpers-1:
 ```
 pacman -S libutil-linux-devel
 export LIBRARY_PATH=/usr/lib
