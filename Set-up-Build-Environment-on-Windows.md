@@ -37,7 +37,7 @@ export PATH="/mingw64/bin/:$PATH"
 ### Compile and install needed YubiKey libraries
 For compiling KeePassXC with YubiKey support, two libraries are needed which don't come with Msys2: libyubikey and libykpers-1.
 
-#### Download and compile libyubikey
+#### Compile libyubikey
 Run these commands in order to build libyubikey:
 ```
 wget https://developers.yubico.com/yubico-c/Releases/libyubikey-1.13.tar.gz
@@ -48,7 +48,7 @@ make -j8
 make install
 ```
 
-#### Download and install libykpers-1
+#### Compile libykpers-1
 Go back to the previous directory (`cd ..`) and run the following commands in order to build libykpers-1:
 ```
 pacman -S libutil-linux-devel
