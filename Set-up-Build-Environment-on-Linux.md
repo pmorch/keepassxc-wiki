@@ -1,3 +1,5 @@
+**Note:** This is only a one-time setup guide. For actually building KeePassXC, please refer to our [build guide](Building-KeePassXC).
+
 ### Install the C++ toolchain
 **You can skip this step if you have a working C++ toolchain (g++, cmake and make)**
 
