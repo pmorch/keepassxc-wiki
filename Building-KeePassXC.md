@@ -1,6 +1,6 @@
 # Building KeePassXC manually
 
-First, make sure you have set up your build environment correctly (see guide for [Linux](Set-up-Build-Environment-on-Linux), [OS X](Set-up-Build-Environment-on-OS-X) and [Windows](Set-up-Build-Environment-on-Windows)).
+First, make sure you have set up your build environment correctly (see guides for [Linux](Set-up-Build-Environment-on-Linux), [OS X](Set-up-Build-Environment-on-OS-X) and [Windows](Set-up-Build-Environment-on-Windows)).
 
 ## Linux
 Download the sources from [keepassxc.org](https://keepassxc.org/download) and unpack them:
