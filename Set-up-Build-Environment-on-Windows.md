@@ -1,3 +1,5 @@
+**Note:** This is only a one-time setup guide. For actually building KeePassXC, please refer to our [build guide](Building-KeePassXC).
+
 ### Install the build environment
 
 * Download MSYS2 64bit: http://msys2.github.io/
