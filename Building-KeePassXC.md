@@ -80,28 +80,6 @@ The `release-tool` has three subcommands. You can get help for each by running
 ./release-tool help <COMMAND>
 ```
 Sub commands are:
-### merge (only useful for KeePassXC maintainers)
-```
-$ ./release-tool help merge
-KeePassXC Release Preparation Helper
-Copyright (C) 2017 KeePassXC Team <https://keepassxc.org/>
-
-Usage: release-tool merge [options]
-
-Merge release branch into main branch and create release tags
-
-Options:
-  -v, --version        Release version number or name (required)
-  -a, --app-name       Application name (default: 'KeePassXC')
-  -s, --source-dir     Source directory (default: '.')
-  -g, --gpg-key        GPG key used to sign the merge commit and release tag,
-                       leave empty to let Git choose your default key
-                       (default: '')
-  -r, --release-branch Source release branch to merge from (default: 'release/VERSION')
-      --target-branch  Target branch to merge to (default: 'master')
-  -t, --tag-name       Override release tag name (defaults to version number)
-  -h, --help           Show this help
-```
 ### build
 ```
 $ ./release-tool help build
@@ -133,6 +111,28 @@ Options:
                           (default: autotype)
   -n, --no-source-tarball Don't build source tarball
   -h, --help              Show this help
+```
+### merge (only useful for KeePassXC maintainers)
+```
+$ ./release-tool help merge
+KeePassXC Release Preparation Helper
+Copyright (C) 2017 KeePassXC Team <https://keepassxc.org/>
+
+Usage: release-tool merge [options]
+
+Merge release branch into main branch and create release tags
+
+Options:
+  -v, --version        Release version number or name (required)
+  -a, --app-name       Application name (default: 'KeePassXC')
+  -s, --source-dir     Source directory (default: '.')
+  -g, --gpg-key        GPG key used to sign the merge commit and release tag,
+                       leave empty to let Git choose your default key
+                       (default: '')
+  -r, --release-branch Source release branch to merge from (default: 'release/VERSION')
+      --target-branch  Target branch to merge to (default: 'master')
+  -t, --tag-name       Override release tag name (defaults to version number)
+  -h, --help           Show this help
 ```
 ### sign (only useful for KeePassXC maintainers)
 ```
