@@ -1,3 +1,5 @@
+**Note:** This is only a one-time setup guide. For actually building KeePassXC, please refer to our [build guide](Building-KeePassXC).
+
 ### Install the build environment
 
 Install Homebrew (it is the easiest way to install the required packages on macOS):
