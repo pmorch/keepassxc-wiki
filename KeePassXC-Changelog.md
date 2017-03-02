@@ -65,3 +65,5 @@
 - Always focus password field when opening the database unlock widget [#116, #117]
 - Fix compilation errors on various platforms [#53, #126, #130]
 - Restructure and improve kdbx-extract utility [#160]
+
+[View the KeePassX v2.0.3 Changelog](https://github.com/keepassx/keepassx/blob/2.0.3/CHANGELOG)
