@@ -13,14 +13,14 @@
 - Suppress error message when auto-reloading a locked database [#345]
 - Improve usability of question dialog when database is already locked by a different instance [#346] ⭐️ 
 - Fix compiler warnings in QHttp library [#351]
-- Use unified toolbar on Mac OS X [#361]
+- Use unified toolbar on Mac OS X [#361] ⭐️ 
 - Fix an issue on X11 where the main window would be raised instead of closed on Alt+F4 [#362]
 
 2.1.2 (2017-02-17)
 =========================
 
 - Ask for save location when creating a new database [#302]
-- Remove Libmicrohttpd dependency to clean up the code and ensure better OS X compatibility [#317, #265] 🔒 
+- Remove Libmicrohttpd dependency to clean up the code and ensure better OS X compatibility [#317, #265] ⭐️ 
 - Prevent Qt from degrading Wifi network performance on certain platforms [#318] ⭐️ 
 - Visually refine user interface on OS X and other platforms [#299] ⭐️ 
 - Remove unusable tray icon setting on OS X [#293]
