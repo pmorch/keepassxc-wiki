@@ -29,7 +29,7 @@
 - Fix global menu disappearing after restoring KeePassXC from the tray on Ubuntu [#276]
 - Fix result order in entry search [#320]
 - Enable HiDPI scaling on supported platforms [#315]
-- Remove empty directories from installation target [#282] 🔒 
+- Remove empty directories from installation target [#282] 
 
 2.1.1 (2017-02-06)
 =========================
