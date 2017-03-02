@@ -163,4 +163,4 @@ inside the source directory. This will build a Docker image with the name `keepa
 ```
 ./release-tool build -v VERSION -d keepassxc/ubuntu:14.04
 ```
-**Important:** rebuild the image regularly with `--no-cache?` to ensure it has the latest security updates!
+**Important:** rebuild the image regularly with `--no-cache` to ensure it has the latest security updates!
