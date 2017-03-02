@@ -157,9 +157,10 @@ When not specified otherwise, it will create a directory called `release` contai
 #### Building inside a Docker container
 The `release-tool` also allows you to build KeePassXC inside a Docker container on Linux. This is important when building a cross-platform `AppImage` to ensure the used library versions are not too new. To build the needed Docker image, run
 ```
-docker build -t keepassxc/ubuntu:14.04 .
+docker build --no-cache -t keepassxc/ubuntu:14.04 .
 ```
 inside the source directory. This will build a Docker image with the name `keepassxc/ubuntu:14.04` from the `Dockerfile` provided inside the directory. You can then start the build process with
 ```
 ./release-tool build -v VERSION -d keepassxc/ubuntu:14.04
 ```
+**Important:** rebuild the image regularly with `--no-cache?` to ensure it has the latest security updates!
