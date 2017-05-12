@@ -1,8 +1,25 @@
-# Building KeePassXC manually
+### Build Dependencies
+
+The following tools must exist within your PATH:
+
+* make
+* cmake (>= 2.8.12)
+* g++ (>= 4.7) or clang++ (>= 3.0)
+
+The following libraries are required:
+
+* Qt 5 (>= 5.2): qtbase and qttools5
+* libgcrypt (>= 1.6)
+* zlib
+* libmicrohttpd
+* libxi, libxtst, qtx11extras (optional for auto-type on X11)
+
+## Preparing the building environment
 
 First, make sure you have set up your build environment correctly (see guides for [Linux](Set-up-Build-Environment-on-Linux), [OS X](Set-up-Build-Environment-on-OS-X) and [Windows](Set-up-Build-Environment-on-Windows)).
 
-## Linux
+## Building
+### Linux
 Download the sources from [keepassxc.org](https://keepassxc.org/download) and unpack them:
 ```
 tar xf keepassxc-*-src.tar.xz
@@ -27,7 +44,7 @@ If you don't want to install KeePassXC at all, you can also run it directly from
 ./src/keepassxc
 ```
 
-### Notes:
+#### Notes:
 If you are experiencing issues with icons not showing up in the KeePassXC user interface, you may want to set the data directory during compilation manually with the following CMake parameter:
 
 - `-DCMAKE_INSTALL_DATADIR="$HOME/.local/share"`
@@ -36,7 +53,7 @@ or
 
 - `-DCMAKE_INSTALL_DATADIR="/usr/share"`
 
-## OS X
+### OS X
 Download and unpack the source code as described in the [Linux](#linux) section, change into the source code directory and run:
 ```
 mkdir build
@@ -46,14 +63,14 @@ cmake -DCMAKE_OSX_ARCHITECTURES=x86_64 -DCMAKE_BUILD_TYPE=Release \
   -DCMAKE_PREFIX_PATH=/usr/local/Cellar/qt5/5.8.0/lib/cmake ..
 make -j8 package
 ```
-### Notes:
+#### Notes:
 Change the value of `-DCMAKE_PREFIX_PATH` according to your installed Qt version. You can change the Qt folder for `macdeployqt` by setting the following parameter:
 
 - `-DQT_BINARY_DIR=/path/to/qt5/bin`.
 
 If you installed Qt5 with `homebrew`, you can skip this step.
 
-## Windows
+### Windows
 In an Msys terminal, download and unpack the source code as described in the [Linux](#linux) section, change into the source code directory and run:
 
 ```
@@ -64,13 +81,13 @@ cmake -G"MSYS Makefiles" -DWITH_XC_AUTOTYPE=ON -DWITH_XC_HTTP=ON \
 make -j8 package
 ```
 
-# Running the unit tests
+## Running the unit tests
 If you compiled KeePassXC with the CMake flags `-DWITH_TESTS=ON` and `-DWITH_GUI_TESTS=ON`, you can run our unit test suite with
 ```
 make test
 ```
 
-# Building using the release-tool
+## Building using the release-tool
 Starting with version 2.1.1, KeePassXC ships with a `release-tool` that automates building release packages from a specified release tag (the `--version parameter`). To see a help listing for the command, download and unpack the source code as described in the [Linux](#linux) section, change into the source directory and run
 ```
 ./release-tool help
