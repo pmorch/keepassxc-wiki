@@ -3,7 +3,7 @@
 The following tools must exist within your PATH:
 
 * make
-* cmake (>= 2.8.12)
+* cmake (>= 3.1)
 * g++ (>= 4.7) or clang++ (>= 3.0)
 
 The following libraries are required:
@@ -11,8 +11,10 @@ The following libraries are required:
 * Qt 5 (>= 5.2): qtbase and qttools5
 * libgcrypt (>= 1.6)
 * zlib
-* libmicrohttpd
-* libxi, libxtst, qtx11extras (optional for auto-type on X11)
+
+The follow libraries are optional:
+* libxi, libxtst, qtx11extras (for auto-type on X11)
+* libyubikey, libykpers-1
 
 ## Preparing the building environment
 
