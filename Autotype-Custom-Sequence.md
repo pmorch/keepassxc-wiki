@@ -31,6 +31,9 @@ This keyword will be replaced by the **URL** field in the selected Entry
 #### {NOTES}
 This keyword will be replaced by the **notes** field in the selected Entry
 
+#### {TOTP}
+This keyword will be replaced by a newly generated **TOTP** code *if the Entry is configured for it*
+
 #### Custom Attributes
 If you define Custom Attributes in your Entry, the Autotype will be able to access them with the Attribute name as an Action preceded by `S:` (*case Sensitive*).
 
