@@ -3,17 +3,23 @@ Welcome to the KeePassXC Wiki!
 KeePassXC (*KeePass Cross-platform Community Edition*) is a cross platform community-driven port of the Windows application “KeePass Password Safe”.
 
 ## About
-KeePassXC is a fork of [KeePassX](https://www.keepassx.org/) that [aims to incorporate stalled pull requests, features, and bug fixes that have never made it into the main KeePassX repository](https://github.com/keepassxreboot/keepassx/issues/43).
-
+KeePassXC is a community fork of [KeePassX](https://www.keepassx.org/), a native cross-platform port of [KeePass](http://keepass.info/) Password Safe, with the goal to extend and improve it with new features and bugfixes to provide a feature-rich, fully cross-platform and modern open-source password manager.
 
 ## Additional features compared to KeePassX
-- Autotype on all three major platforms (Linux, Windows, OS X)
-- Stand-alone password generator
+- Auto-Type on all three major platforms (Linux, Windows, macOS)
+- Twofish encryption
+- YubiKey challenge-response support
+- TOTP generation
+- CSV import
+- Command line interface
+- DEP and ASLR hardening
+- Stand-alone password and passphrase generator
 - Password strength meter
-- Use website's favicons as entry icons
+- Using website favicons as entry icons
 - Merging of databases
-- Automatic reload when the database changed on disk
-- KeePassHTTP support for use with [PassIFox](https://addons.mozilla.org/en-us/firefox/addon/passifox/) in Mozilla Firefox and [chromeIPass](https://chrome.google.com/webstore/detail/chromeipass/ompiailgknfdndiefoaoiligalphfdae) in Google Chrome or Chromium.
+- Automatic reload when the database was changed externally
+- KeePassHTTP support for use with [PassIFox](https://addons.mozilla.org/en-us/firefox/addon/passifox/) in Mozilla Firefox and [chromeIPass](https://chrome.google.com/webstore/detail/chromeipass/ompiailgknfdndiefoaoiligalphfdae) in Google Chrome or Chromium. [passafari in Safari](https://github.com/mmichaa/passafari.safariextension/).
+- Many bug fixes
 
 For a full list of features and changes, read the [CHANGELOG](https://github.com/keepassxreboot/keepassxc/blob/master/CHANGELOG) document.
 
