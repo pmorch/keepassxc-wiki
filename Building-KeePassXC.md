@@ -55,14 +55,14 @@ or
 
 - `-DCMAKE_INSTALL_DATADIR="/usr/share"`
 
-### OS X
+### macOS
 Download and unpack the source code as described in the [Linux](#linux) section, change into the source code directory and run:
 ```
 mkdir build
 cd build
 cmake -DCMAKE_OSX_ARCHITECTURES=x86_64 -DCMAKE_BUILD_TYPE=Release \
   -DWITH_XC_AUTOTYPE=ON -DWITH_XC_HTTP=ON -DWITH_XC_YUBIKEY=ON \
-  -DCMAKE_PREFIX_PATH=/usr/local/Cellar/qt5/5.8.0/lib/cmake ..
+  -DCMAKE_PREFIX_PATH=/usr/local/Cellar/qt5/5.9.0_1/lib/cmake ..
 make -j8 package
 ```
 #### Notes:
