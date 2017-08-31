@@ -37,6 +37,8 @@ sudo apt-get install libxi-dev libxtst-dev qtbase5-dev \
 
 On Fedora/RHEL/CentOS:
 
+> Note: CentOS may require more up-to-date packages, provided here: https://copr.fedorainfracloud.org/coprs/bugzy/keepassxc/
+
 ```bash
 sudo dnf install libXi-devel libXtst-devel qt5-qtbase-devel \
     qt5-linguist qt5-qtx11extras qt5-qtx11extras-devel qt5-qttools \
