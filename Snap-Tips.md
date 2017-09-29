@@ -1,4 +1,3 @@
-# Snap Tips
 Are you using KeePassXC from the Ubuntu store? Here are some tips to enhance your experience:
 
 ### 1. How do I open URL's in my browser?
