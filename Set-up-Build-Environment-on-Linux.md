@@ -31,8 +31,7 @@ On Debian/Ubuntu:
 
 ```bash
 sudo apt-get install libxi-dev libxtst-dev qtbase5-dev \
-    libqt5x11extras5-dev qttools5-dev qttools5-dev-tools \
-    libgcrypt20-dev zlib1g-dev libyubikey-dev libykpers-1-dev
+    qttools5-dev qttools5-dev-tools libgcrypt20-dev zlib1g-dev
 ```
 
 On Fedora/RHEL/CentOS:
@@ -41,14 +40,38 @@ On Fedora/RHEL/CentOS:
 
 ```bash
 sudo dnf install libXi-devel libXtst-devel qt5-qtbase-devel \
-    qt5-linguist qt5-qtx11extras qt5-qtx11extras-devel qt5-qttools \
-    libgcrypt-devel zlib-devel libyubikey-devel ykpers-devel
+    qt5-linguist qt5-qttools libgcrypt-devel zlib-devel
 ```
 
 On Arch Linux:
 ```bash
-sudo pacman -S libxi libxtst qt5-base qt5-x11extras qt5-tools \
-    libgcrypt zlib yubico-c yubikey-personalization
+sudo pacman -S libxi libxtst qt5-base qt5-tools libgcrypt zlib
+```
+
+### Install the optional dependencies
+
+These are required to build Auto-Type and Yubikey support.
+
+On Debian/Ubuntu:
+
+```bash
+sudo apt-get install libxi-dev libxtst-dev libqt5x11extras5-dev \
+    libyubikey-dev libykpers-1-dev
+```
+
+On Fedora/RHEL/CentOS:
+
+> Note: CentOS may require more up-to-date packages, provided here: https://copr.fedorainfracloud.org/coprs/bugzy/keepassxc/
+
+```bash
+sudo dnf install libXi-devel libXtst-devel qt5-qtx11extras \
+    qt5-qtx11extras-devel libyubikey-devel ykpers-devel
+```
+
+On Arch Linux:
+```bash
+sudo pacman -S libxi libxtst qt5-x11extras qt5-tools \
+    yubico-c yubikey-personalization
 ```
 
 ### Update your environment regularly
