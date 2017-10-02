@@ -1,4 +1,4 @@
-### Build Dependencies
+# Required Dependencies
 
 The following tools must exist within your PATH:
 
@@ -16,17 +16,22 @@ The follow libraries are optional:
 * libxi, libxtst, qtx11extras (for auto-type on X11)
 * libyubikey, libykpers-1
 
-## Preparing the building environment
+# Building Manually
 
-First, make sure you have set up your build environment correctly (see guides for [Linux](Set-up-Build-Environment-on-Linux), [OS X](Set-up-Build-Environment-on-OS-X) and [Windows](Set-up-Build-Environment-on-Windows)).
+## 1. Setup your build environment
 
-## Building
+Use the following guides to setup your build environment:
+* [Linux (Ubuntu/Fedora/RHEL/CentOS/Arch)](Set-up-Build-Environment-on-Linux)
+* [OS X 5.10+](Set-up-Build-Environment-on-OS-X)
+* [Windows 7/10](Set-up-Build-Environment-on-Windows).
+
+## 2. Building
 ### Linux
 Download the sources from [keepassxc.org](https://keepassxc.org/download) and unpack them:
 ```
 tar xf keepassxc-*-src.tar.xz
 ```
-or pull them directly from Git:
+or pull them directly from Git (note: default branch is ```develop```):
 ```
 git clone https://github.com/keepassxreboot/keepassxc.git
 ```
@@ -83,13 +88,15 @@ cmake -G"MSYS Makefiles" -DWITH_XC_AUTOTYPE=ON -DWITH_XC_HTTP=ON \
 make -j8 package
 ```
 
-## Running the unit tests
-If you compiled KeePassXC with the CMake flags `-DWITH_TESTS=ON` and `-DWITH_GUI_TESTS=ON`, you can run our unit test suite with
+## 3. Running tests
+If you compiled KeePassXC with the CMake flags `-DWITH_TESTS=ON` and `-DWITH_GUI_TESTS=ON`, you can run our unit test suite with:
 ```
 make test
 ```
 
-## Building using the release-tool
+_Note: the importcsv test requires a UTF-8 environment to run successfully._
+
+# Building using the release-tool
 Starting with version 2.1.1, KeePassXC ships with a `release-tool` that automates building release packages from a specified release tag (the `--version parameter`). To see a help listing for the command, download and unpack the source code as described in the [Linux](#linux) section, change into the source directory and run
 ```
 ./release-tool help
@@ -99,7 +106,7 @@ The `release-tool` has three subcommands. You can get help for each by running
 ./release-tool help <COMMAND>
 ```
 Sub commands are:
-### build
+## build
 ```
 $ ./release-tool help build
 KeePassXC Release Preparation Helper
@@ -131,7 +138,7 @@ Options:
   -n, --no-source-tarball Don't build source tarball
   -h, --help              Show this help
 ```
-### merge (only useful for KeePassXC maintainers)
+## merge (only useful for KeePassXC maintainers)
 ```
 $ ./release-tool help merge
 KeePassXC Release Preparation Helper
@@ -153,7 +160,7 @@ Options:
   -t, --tag-name       Override release tag name (defaults to version number)
   -h, --help           Show this help
 ```
-### sign (only useful for KeePassXC maintainers)
+## sign (only useful for KeePassXC maintainers)
 ```
 $ ./release-tool help sign
 KeePassXC Release Preparation Helper
@@ -173,7 +180,7 @@ If you are not a KeePassXC maintainer, the only interesting command for you is `
 
 When not specified otherwise, it will create a directory called `release` containing the build directory, a source tarball and the packaged binary bundles. On Linux, there will also be a directory `release-bin` inside the `release` directory, containing stripped versions of all the compiled binaries without additional dependencies.
 
-#### Building inside a Docker container
+# Building inside a Docker container
 The `release-tool` also allows you to build KeePassXC inside a Docker container on Linux. This is important when building a cross-platform `AppImage` to ensure the used library versions are not too new. To build the needed Docker image, run
 ```
 docker build --no-cache -t keepassxc/ubuntu:14.04 .
