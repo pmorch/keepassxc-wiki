@@ -11,3 +11,8 @@ Due to a snap's isolation and security settings you must manually enable the "ra
 ### 3. Why can't I see anything outside my home directory?
 
 Due to snap's isolation and security settings you cannot access any files outside your home directory. Furthermore, you cannot access any hidden files within your home directory. The only exception is mounted USB drives, but you must type in ```/media/``` into the file open dialog to see them.
+
+### 4. Opening a URL (CTRL+U) doesn't work!
+
+In order for the snap to communicate with the system's dbus you have to install an extra package. If you want to open URL's from within keepassxc install the snapd-xdg-open package using the following command:
+```sudo apt-get install snapd-xdg-open```
