@@ -55,7 +55,7 @@ These are required to build Auto-Type and Yubikey support.
 On Debian/Ubuntu:
 
 ```bash
-sudo apt-get install libxi-dev libxtst-dev libqt5x11extras5-dev \
+sudo apt install libxi-dev libxtst-dev libqt5x11extras5-dev \
     libyubikey-dev libykpers-1-dev
 ```
 
