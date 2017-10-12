@@ -6,7 +6,7 @@
 On Debian/Ubuntu:
 
 ```bash
-sudo apt-get install build-essential cmake g++
+sudo apt install build-essential cmake g++
 ```
 
 On Fedora/RHEL/CentOS:
@@ -30,7 +30,7 @@ sudo pacman -S cmake make gcc-multilib
 On Debian/Ubuntu:
 
 ```bash
-sudo apt-get install libxi-dev libxtst-dev qtbase5-dev \
+sudo apt install libxi-dev libxtst-dev qtbase5-dev \
     qttools5-dev qttools5-dev-tools libgcrypt20-dev zlib1g-dev
 ```
 
