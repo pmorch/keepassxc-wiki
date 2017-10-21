@@ -30,8 +30,8 @@ sudo pacman -S cmake make gcc-multilib
 On Debian/Ubuntu:
 
 ```bash
-sudo apt install libxi-dev libxtst-dev qtbase5-dev \
-    qttools5-dev qttools5-dev-tools libgcrypt20-dev zlib1g-dev
+sudo apt installqtbase5-dev qttools5-dev qttools5-dev-tools \
+    libgcrypt20-dev zlib1g-dev
 ```
 
 On Fedora/RHEL/CentOS:
@@ -39,13 +39,13 @@ On Fedora/RHEL/CentOS:
 > Note: CentOS may require more up-to-date packages, provided here: https://copr.fedorainfracloud.org/coprs/bugzy/keepassxc/
 
 ```bash
-sudo dnf install libXi-devel libXtst-devel qt5-qtbase-devel \
-    qt5-linguist qt5-qttools libgcrypt-devel zlib-devel
+sudo dnf install qt5-qtbase-devel qt5-linguist qt5-qttools \
+    libgcrypt-devel zlib-devel
 ```
 
 On Arch Linux:
 ```bash
-sudo pacman -S libxi libxtst qt5-base qt5-tools libgcrypt zlib
+sudo pacman -S qt5-base qt5-tools libgcrypt zlib
 ```
 
 ### Install the optional dependencies
