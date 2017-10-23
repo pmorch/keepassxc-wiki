@@ -30,7 +30,7 @@ sudo pacman -S cmake make gcc-multilib
 On Debian/Ubuntu:
 
 ```bash
-sudo apt installqtbase5-dev qttools5-dev qttools5-dev-tools \
+sudo apt install qtbase5-dev qttools5-dev qttools5-dev-tools \
     libgcrypt20-dev zlib1g-dev
 ```
 
