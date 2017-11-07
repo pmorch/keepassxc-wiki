@@ -90,3 +90,7 @@ DIVIDE
 )  
 {  
 }`
+
+### Custom Entry Attributes
+
+User can reference Custom Entry Attributes with the keyword `{S:<AttrName>}` where `<AttrName>` is the entry attribute defined by the user.
