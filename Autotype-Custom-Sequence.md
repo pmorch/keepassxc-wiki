@@ -15,7 +15,7 @@ The key-press/characters will be injected in the focused input of the Front-Most
  
 For example a sequence like `Hello {USERNAME}{ENTER}` will result in the key-press of the `Hello ` string, the username's character from the selected Entry and the `ENTER` key.
 
-### Keyword
+### Keywords
 #### {USERNAME}
 This keyword will be replaced by the **username** field in the selected Entry
 
@@ -34,7 +34,7 @@ This keyword will be replaced by the **notes** field in the selected Entry
 #### {TOTP}
 This keyword will be replaced by a newly generated **TOTP** code *if the Entry is configured for it*
 
-#### Custom Attributes
+#### Custom Entry Attributes
 If you define Custom Attributes in your Entry, the Autotype will be able to access them with the Attribute name as an Action preceded by `S:` (*case Sensitive*).
 
 For example: I define a new custom attribute named `PIN` with value `12345`. Now I can Autotype it with the action `{S:PIN}`.
@@ -90,7 +90,3 @@ DIVIDE
 )  
 {  
 }`
-
-### Custom Entry Attributes
-
-User can reference Custom Entry Attributes with the keyword `{S:<AttrName>}` where `<AttrName>` is the entry attribute defined by the user.
