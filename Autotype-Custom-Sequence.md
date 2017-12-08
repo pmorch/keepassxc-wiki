@@ -34,14 +34,14 @@ This keyword will be replaced by the **notes** field in the selected Entry
 #### {TOTP}
 This keyword will be replaced by a newly generated **TOTP** code *if the Entry is configured for it*
 
-#### Custom Entry Attributes
+### Custom Entry Attributes
 If you define Custom Attributes in your Entry, the Autotype will be able to access them with the Attribute name as an Action preceded by `S:` (*case Sensitive*).
 
 For example: I define a new custom attribute named `PIN` with value `12345`. Now I can Autotype it with the action `{S:PIN}`.
 
 **NOTE**: Custom Attribute name are CaseSensitive
 
-### Special Keyword
+### Special Actions
 #### {DELAY n}
 This keyword will add a milliseconds delay **between actions**
 
@@ -55,23 +55,24 @@ This can be useful if the Autotype is typing too fast and some character are mis
 #### {CLEARFIELD}
 This keyword will clean the input field
 
-### Key
+### Keys
 
 This is a list of all the possibile key you can use with Autotype:<br/>
-`TAB  
+```
+TAB  
 ENTER  
 SPACE  
 UP  
 DOWN  
 LEFT  
 RIGHT  
-INSERT INS  
-DELETE DEL  
+INSERT  INS  
+DELETE  DEL  
 HOME  
 END  
 PGUP  
 PGDOWN  
-BACKSPACE BS BKSP  
+BACKSPACE  BS  BKSP  
 BREAK  
 CAPSLOCK  
 ESC  
@@ -79,14 +80,16 @@ HELP
 NUMLOCK  
 PTRSC  
 SCROLLLOCK  
-ADD +  
+ADD  +  
 SUBTRACT  
 MULTIPLY  
 DIVIDE  
-^  
-%  
-~  
-(  
-)  
-{  
-}`
+^  %  ~  (  )  {  }
+```
+
+Examples:
+```
+{{}
+{ESC}
+{+}
+```
