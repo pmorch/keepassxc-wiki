@@ -3,7 +3,7 @@ When using autotype you can set up a custom sequence that will be executed by Ke
 A sequence is list of actions and characters.<br/>
 Actions are keywords and keys placed inside curly bracket `{` and `}`.<br/>
 
-All the actions in the sequence are Case-Insensitive (except for Custom Entry Attributes). This means that `{USERname}` is equal to `{USERNAME}` but `{CUSTOM}` isn't equal to `{Custom}`<br/>
+All the actions in the sequence are Case-Insensitive (except for Custom Entry Attributes). This means that `{USERname}` is equal to `{USERNAME}` but `{S:CUSTOM}` isn't equal to `{S:Custom}`<br/>
 
 If an action is invalid (it's not a key or a keyword and it's not a defined custom attributes), nothing will be printed.
 
