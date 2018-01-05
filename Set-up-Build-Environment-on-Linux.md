@@ -50,13 +50,13 @@ sudo pacman -S qt5-base qt5-tools libgcrypt zlib
 
 ### Install the optional dependencies
 
-These are required to build Auto-Type and Yubikey support.
+These are required to build Auto-Type, Yubikey and browser integration support.
 
 On Debian/Ubuntu:
 
 ```bash
 sudo apt install libxi-dev libxtst-dev libqt5x11extras5-dev \
-    libyubikey-dev libykpers-1-dev
+    libyubikey-dev libykpers-1-dev libsodium-dev
 ```
 
 On Fedora/RHEL/CentOS:
@@ -65,13 +65,13 @@ On Fedora/RHEL/CentOS:
 
 ```bash
 sudo dnf install libXi-devel libXtst-devel qt5-qtx11extras \
-    qt5-qtx11extras-devel libyubikey-devel ykpers-devel
+    qt5-qtx11extras-devel libyubikey-devel ykpers-devel libsodium-devel
 ```
 
 On Arch Linux:
 ```bash
 sudo pacman -S libxi libxtst qt5-x11extras qt5-tools \
-    yubico-c yubikey-personalization
+    yubico-c yubikey-personalization libsodium
 ```
 
 ### Update your environment regularly
