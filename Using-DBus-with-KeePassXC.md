@@ -1,4 +1,4 @@
-## Using D-BUS feature
+## Using D-Bus feature
 
 * Open keepassxc database: without password and key file
 
