@@ -33,9 +33,9 @@ It can be usefull to know how to generate the XML adaptor
 
 Generate template from sources
 
-    `qdbuscpp2xml -M -s MainWindow.h -o org.keepassxc.MainWindow.xml`
+    qdbuscpp2xml -M -s MainWindow.h -o org.keepassxc.MainWindow.xml
     
 Make sure interface name is org.keepassxc.MainWindow
 
-    `<interface name="org.keepassxc.MainWindow">`
+    <interface name="org.keepassxc.MainWindow">
 
