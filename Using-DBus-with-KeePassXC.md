@@ -2,28 +2,39 @@
 
 * Open keepassxc database: without password and key file
 
-`qdbus org.keepassxc.MainWindow /keepassxc org.keepassxc.MainWindow.openDatabase /path/to/database.kdbx`
+```
+qdbus org.keepassxc.MainWindow /keepassxc org.keepassxc.MainWindow.openDatabase /path/to/database.kdbx
+```
 
 * Open keepassxc database: with password but without key file
 
-`qdbus org.keepassxc.MainWindow /keepassxc org.keepassxc.MainWindow.openDatabase /path/to/database.kdbx passwd`
+```
+qdbus org.keepassxc.MainWindow /keepassxc org.keepassxc.MainWindow.openDatabase /path/to/database.kdbx passwd
+```
 
 * Open keepassxc database: with password and key file
 
-`qdbus org.keepassxc.MainWindow /keepassxc org.keepassxc.MainWindow.openDatabase /path/to/database.kdbx passwd /path/to/key`
-
+```
+qdbus org.keepassxc.MainWindow /keepassxc org.keepassxc.MainWindow.openDatabase /path/to/database.kdbx passwd /path/to/key
+```
 
 *  Lock all keepassxc databases
 
-`qdbus org.keepassxc.MainWindow /keepassxc org.keepassxc.MainWindow.closeAllDatabases`
+```
+qdbus org.keepassxc.MainWindow /keepassxc org.keepassxc.MainWindow.lockAllDatabases
+```
 
 *  Close all keepassxc databases
 
-`qdbus org.keepassxc.MainWindow /keepassxc org.keepassxc.MainWindow.closeAllDatabases`
+```
+qdbus org.keepassxc.MainWindow /keepassxc org.keepassxc.MainWindow.closeAllDatabases
+```
     
 *  Exit keepassxc
 
-    `qdbus org.keepassxc.MainWindow /keepassxc org.keepassxc.MainWindow.exit`
+```
+qdbus org.keepassxc.MainWindow /keepassxc org.keepassxc.MainWindow.exit
+```
 
 ## Develop
 
@@ -38,9 +49,12 @@ It can be usefull to know how to generate the XML adaptor
 
 Generate template from sources
 
-    qdbuscpp2xml -M -s MainWindow.h -o org.keepassxc.MainWindow.xml
+```
+qdbuscpp2xml -M -s MainWindow.h -o org.keepassxc.MainWindow.xml
+```
     
 Make sure interface name is org.keepassxc.MainWindow
 
-    <interface name="org.keepassxc.MainWindow">
-
+```
+<interface name="org.keepassxc.MainWindow">
+```
