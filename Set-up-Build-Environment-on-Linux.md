@@ -34,7 +34,7 @@ sudo apt install qtbase5-dev qttools5-dev qttools5-dev-tools \
     libgcrypt20-dev libargon2-0-dev zlib1g-dev
 ```
 
-**Ubuntu 14.04** and **16.04** require newer versions of libgcrypt20-dev, which can be installed from [our Ubuntu PPA](https://launchpad.net/~phoerious/+archive/ubuntu/keepassxc). To avoid clashes with the upstream `libgcrypt20-dev` package, our package is named `libgcrypt20-18` and installs to `/opt/libgcrypt20-18`. You therefore need to set the following environment variables for CMake to find the required libraries:
+**Ubuntu 14.04** and **16.04** require newer versions of `libgcrypt20-dev`, which can be installed from [our Ubuntu PPA](https://launchpad.net/~phoerious/+archive/ubuntu/keepassxc). To avoid clashes with the upstream `libgcrypt20-dev` package, our package is named `libgcrypt20-18` and installs to `/opt/libgcrypt20-18`. You therefore need to set the following environment variables for CMake to find the required libraries:
 
 ```bash
 export CMAKE_INCLUDE_PATH="/opt/libgcrypt20-18/include:/opt/gpg-error-127/include"
