@@ -41,7 +41,7 @@ export CMAKE_INCLUDE_PATH="/opt/libgcrypt20-18/include:/opt/gpg-error-127/includ
 export CMAKE_LIBRARY_PATH="/opt/libgcrypt20-18/lib/x86_64-linux-gnu:/opt/gpg-error-127/lib/x86_64-linux-gnu"
 ```
 
-Alternatively, these can be passed as direct parameters to CMake later on (`-DCMAKE_INCLUDE_PATH=... -DCMAKE_LIBRARY_PATH=...`).
+Alternatively, these can be passed as direct parameters to `cmake` later on (`-DCMAKE_INCLUDE_PATH=... -DCMAKE_LIBRARY_PATH=...`).
 
 **Ubuntu 14.04** is also missing the required `libargon2-0-dev` package, which can be installed from the same PPA.
 
