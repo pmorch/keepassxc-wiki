@@ -28,7 +28,7 @@ Open an MSYS2 shell:
 ```
 pacman -S mingw-w64-$(uname -m)-qt5 \
     mingw-w64-$(uname -m)-libgcrypt mingw-w64-$(uname -m)-zlib \
-    mingw-w64-$(uname -m)-libsodium
+    mingw-w64-$(uname -m)-argon2 mingw-w64-$(uname -m)-libsodium
 ```
 
 If CMake is having trouble finding your compiler, add this line to your `/etc/profile` and restart your terminal:
