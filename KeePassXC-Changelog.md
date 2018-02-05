@@ -4,6 +4,47 @@
 
 **Major improvements are tagged with ⭐️.**
 
+2.2.4 (2017-12-14)
+=========================
+
+- Prevent database corruption when locked [#1219] ⭐️
+- Fixes apply button not saving new entries [#1141] ⭐️
+- Switch to Consolas font on Windows for password edit [#1229]
+- Multiple fixes to AppImage deployment [#1115, #1228]
+- Fixes multiple memory leaks [#1213]
+- Resize message close to 16x16 pixels [#1253]
+
+2.2.2 (2017-10-22)
+=========================
+
+- Fixed entries with empty URLs being reported to KeePassHTTP clients [#1031] ⭐️
+- Fixed YubiKey detection and enabled CLI tool for AppImage binary [#1100]
+- Added AppStream description [#1082]
+- Improved TOTP compatibility and added new Base32 implementation [#1069]
+- Fixed error handling when processing invalid cipher stream [#1099]
+- Fixed double warning display when opening a database [#1037]
+- Fixed unlocking databases with –pw-stdin [#1087]
+- Added ability to override QT_PLUGIN_PATH environment variable for AppImages [#1079]
+- Fixed transform seed not being regenerated when saving the database [#1068] 🔒
+- Fixed only one YubiKey slot being polled [#1048]
+- Corrected an issue with entry icons while merging [#1008]
+- Corrected desktop and tray icons in Snap package [#1030]
+- Fixed screen lock and Google fallback settings [#1029]
+
+2.2.1 (2017-10-02)
+=========================
+
+- Corrected multiple snap issues [#934, #1011]
+- Corrected multiple custom icon issues [#708, #719, #994]
+- Corrected multiple Yubikey issues [#880]
+- Fixed single instance preventing load on occasion [#997]
+- Keep entry history when merging databases [#970] ⭐️
+- Prevent data loss if passwords were mismatched [#1007] ⭐️
+- Fixed crash after merge [#941]
+- Added configurable auto-type default delay [#703]
+- Unlock database dialog window comes to front [#663]
+- Translation and compiling fixes
+
 2.2.0 (2017-06-26)
 =========================
 
