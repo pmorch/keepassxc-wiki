@@ -4,7 +4,38 @@
 
 **Major improvements are tagged with ⭐️.**
 
+2.2.0 (2017-06-26)
+=========================
 
+- Added YubiKey 2FA integration for unlocking databases [#127] ⭐️ 🔒
+- Added TOTP support [#519] ⭐️
+- Added CSV import tool [#146, #490] ⭐️
+- Added KeePassXC CLI tool [#254] ⭐️
+- Added diceware password generator [#373] ⭐️
+- Added support for entry references [#370, #378] ⭐️
+- Added support for Twofish encryption [#167] ⭐️ 🔒
+- Enabled DEP and ASLR for in-memory protection [#371] 🔒
+- Enabled single instance mode [#510]
+- Enabled portable mode [#645] ⭐️
+- Enabled database lock on screensaver and session lock [#545] ⭐️ 🔒
+- Redesigned welcome screen with common features and recent databases [#292] ⭐️
+- Multiple updates to search behavior [#168, #213, #374, #471, #603, #654]
+- Added auto-type fields {CLEARFIELD}, {SPACE}, {{}, {}} [#267, #427, #480]
+- Fixed auto-type errors on Linux [#550]
+- Prompt user prior to executing a cmd:// URL [#235] 🔒
+- Entry attributes can be protected (hidden) [#220] 🔒
+- Added extended ascii to password generator [#538]
+- Added new database icon to toolbar [#289]
+- Added context menu entry to empty recycle bin in databases [#520]
+- Added “apply” button to entry and group edit windows [#624]
+- Added macOS tray icon and enabled minimize on close [#583]
+- Fixed issues with unclean shutdowns [#170, #580]
+- Changed keyboard shortcut to create new database to CTRL+SHIFT+N [#515]
+- Compare window title to entry URLs [#556]
+- Implemented inline error messages [#162]
+- Ignore group expansion and other minor changes when making database “dirty” [#464]
+- Updated license and copyright information on souce files [#632]
+- Added contributors list to about dialog [#629]
 
 2.1.4 (2017-04-09)
 =========================
