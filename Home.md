@@ -3,21 +3,21 @@ Welcome to the KeePassXC Wiki!
 ## About
 KeePassXC is a community fork of [KeePassX](https://www.keepassx.org/), a native cross-platform port of [KeePass](http://keepass.info/) Password Safe, with the goal to extend and improve it with new features and bugfixes to provide a feature-rich, fully cross-platform and modern open-source password manager.
 
-## Additional features compared to KeePassX
-- Auto-Type on all three major platforms (Linux, Windows, macOS)
-- Twofish encryption
-- YubiKey challenge-response support
+## Main Features
+- Secure storage of passwords and other private data with AES or Twofish encryption
+- Cross-platform, runs on Linux, Windows and macOS without modifications
+- File format compatibility with KeePass2, KeePassX, MacPass, KeeWeb and others
+- Auto-Type on all supported platforms for automagically filling in login forms
+- Key file and YubiKey challenge-response support for additional security
 - TOTP generation
-- CSV import
+- CSV import from other password managers (e.g., LastPass)
 - Command line interface
-- DEP and ASLR hardening
 - Stand-alone password and passphrase generator
 - Password strength meter
-- Using website favicons as entry icons
-- Merging of databases
+- Custom icons for database entries and download of website favicons
+- Database merge functionality
 - Automatic reload when the database was changed externally
-- KeePassHTTP support for use with [PassIFox](https://addons.mozilla.org/en-us/firefox/addon/passifox/) in Mozilla Firefox, [chromeIPass](https://chrome.google.com/webstore/detail/chromeipass/ompiailgknfdndiefoaoiligalphfdae) in Google Chrome or Chromium and [passafari](https://github.com/mmichaa/passafari.safariextension/) in Safari.
-- Many bug fixes
+- KeePassHTTP support for use with [PassIFox](https://addons.mozilla.org/en-us/firefox/addon/passifox/) in Mozilla Firefox, [chromeIPass](https://chrome.google.com/webstore/detail/chromeipass/ompiailgknfdndiefoaoiligalphfdae) in Google Chrome or Chromium and [passafari](https://github.com/mmichaa/passafari.safariextension/) in Safari
 
 For a full list of features and changes, read the [CHANGELOG](https://github.com/keepassxreboot/keepassxc/blob/master/CHANGELOG) document.
 
