@@ -1,1 +1,1 @@
-Copyright (C) 2017-2018 KeePassXC Team
+Copyright (C) 2016-2018 KeePassXC Team
