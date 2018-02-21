@@ -62,7 +62,7 @@ or
 ### macOS
 Download and unpack the source code as described in the [Linux](#linux) section, change into the source code directory and run:
 ```
-QT_VERSION="$(ls /usr/local/Cellar/qt 2> /dev/null | sort -r | head -n1)"
+QT_VERSION="$(ls /usr/local/Cellar/qt | sort -r | head -n1)"
 mkdir build
 cd build
 cmake -DCMAKE_OSX_ARCHITECTURES=x86_64 \
