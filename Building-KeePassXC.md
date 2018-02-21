@@ -62,12 +62,13 @@ or
 ### macOS
 Download and unpack the source code as described in the [Linux](#linux) section, change into the source code directory and run:
 ```
+QT_VERSION="$(ls /usr/local/Cellar/qt 2> /dev/null | sort -r | head -n1)"
 mkdir build
 cd build
 cmake -DCMAKE_OSX_ARCHITECTURES=x86_64 \
   -DCMAKE_BUILD_TYPE=Release \
   -DWITH_XC_ALL=ON \
-  -DCMAKE_PREFIX_PATH=/usr/local/Cellar/qt5/5.10.0/lib/cmake ..
+  -DCMAKE_PREFIX_PATH=/usr/local/Cellar/qt/${QT_VERSION}/lib/cmake ..
 make -j8 package
 ```
 #### Notes:
