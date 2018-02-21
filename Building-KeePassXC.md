@@ -39,8 +39,7 @@ Now change into the source directory and run the following commands:
 ```
 mkdir build
 cd build
-cmake -DWITH_XC_AUTOTYPE=ON -DWITH_XC_HTTP=ON -DWITH_XC_YUBIKEY=ON \
-    -DCMAKE_BUILD_TYPE=Release ..
+cmake -DWITH_XC_ALL=ON -DCMAKE_BUILD_TYPE=Release ..
 make -j8
 make DESTDIR=~/.local install
 ```
@@ -65,8 +64,9 @@ Download and unpack the source code as described in the [Linux](#linux) section,
 ```
 mkdir build
 cd build
-cmake -DCMAKE_OSX_ARCHITECTURES=x86_64 -DCMAKE_BUILD_TYPE=Release \
-  -DWITH_XC_AUTOTYPE=ON -DWITH_XC_HTTP=ON -DWITH_XC_YUBIKEY=ON \
+cmake -DCMAKE_OSX_ARCHITECTURES=x86_64 \
+  -DCMAKE_BUILD_TYPE=Release \
+  -DWITH_XC_ALL=ON \
   -DCMAKE_PREFIX_PATH=/usr/local/Cellar/qt5/5.10.0/lib/cmake ..
 make -j8 package
 ```
@@ -83,8 +83,7 @@ In an Msys terminal, download and unpack the source code as described in the [Li
 ```
 mkdir build
 cd build
-cmake -G"MSYS Makefiles" -DWITH_XC_AUTOTYPE=ON -DWITH_XC_HTTP=ON \
-    -DWITH_XC_YUBIKEY=ON -DCMAKE_BUILD_TYPE=Release ..
+cmake -G"MSYS Makefiles" -DWITH_XC_ALL=ON -DCMAKE_BUILD_TYPE=Release ..
 make -j8 package
 ```
 
