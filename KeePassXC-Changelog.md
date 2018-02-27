@@ -26,7 +26,7 @@
 - Auto-Type dialog and password generator can now be exited with ESC [#1252, #1412]
 - Add optional dark tray icon [#1154]
 - Add new "Unsafe saving" option to work around saving problems with file sync services [#1385] ⭐️
-- Add IBus support to AppImage and additional image formats to Windows builds [#1534, #1537]
+- Add IBus support to AppImage and additional image formats to Windows builds [#1534, #1537] ⭐️
 - Add diceware password generator to CLI [#1406]
 - Add --key-file option to CLI [#816, #824]
 - Add DBus interface for opening and closing KeePassXC databases [#283]
