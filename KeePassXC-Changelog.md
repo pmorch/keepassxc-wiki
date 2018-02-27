@@ -41,7 +41,7 @@
 - Correct menu issues on macOS [#1335]
 - Allow compilation on OpenBSD [#1328]
 - Improve entry attachments view [#1139, #1298]
-- Fix auto lock for Gnome and Xfce [#910, #1249]
+- Fix auto lock for Gnome and Xfce [#910, #1249] 🔒
 - Don't remember key files in file dialogs when the setting is disabled [#1188] 🔒
 - Improve database merging and conflict resolution [#807, #1165]
 - Fix macOS pasteboard issues [#1202]
