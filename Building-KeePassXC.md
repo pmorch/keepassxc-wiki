@@ -62,21 +62,19 @@ or
 ### macOS
 Download and unpack the source code as described in the [Linux](#linux) section, change into the source code directory and run:
 ```
-QT_VERSION="$(ls /usr/local/Cellar/qt | sort -r | head -n1)"
 mkdir build
 cd build
 cmake -DCMAKE_OSX_ARCHITECTURES=x86_64 \
   -DCMAKE_BUILD_TYPE=Release \
-  -DWITH_XC_ALL=ON \
-  -DCMAKE_PREFIX_PATH=/usr/local/Cellar/qt/${QT_VERSION}/lib/cmake ..
+  -DWITH_XC_ALL=ON ..
 make -j8 package
 ```
 #### Notes:
-Change the value of `-DCMAKE_PREFIX_PATH` according to your installed Qt version. You can change the Qt folder for `macdeployqt` by setting the following parameter:
+If you installed via Homebrew, you should be able to compile KeePassXC this way, but if CMake fails to find your Qt installation, you can specify it manually by adding the following parameter:
 
-- `-DQT_BINARY_DIR=/path/to/qt5/bin`.
+- `-DCMAKE_PREFIX_PATH=/usr/local/opt/qt/lib/cmake`
 
-If you installed Qt5 with `homebrew`, you can skip this step.
+(or whatever your Qt installation path is)
 
 ### Windows
 In an Msys terminal, download and unpack the source code as described in the [Linux](#linux) section, change into the source code directory and run:
