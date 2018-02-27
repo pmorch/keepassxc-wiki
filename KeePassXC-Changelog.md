@@ -15,7 +15,7 @@
 - Deprecate KeePassHTTP [#1392]
 - Add support for Steam one-time passwords [#1206] ⭐️
 - Add support for multiple Auto-Type sequences for a single entry [#1390] ⭐️
-- Adjust YubiKey HMAC-SHA1 challenge-response key generation for KDBX 4.0 [#1060]
+- Adjust YubiKey HMAC-SHA1 challenge-response key generation for KDBX 4.0 [#1060] ⭐️
 - Replace qHttp with cURL for website icon downloads [#1460] ⭐️ 🔒
 - Remove lock file [#1231] ⭐️
 - Add option to create backup file before saving [#1385] ⭐️
