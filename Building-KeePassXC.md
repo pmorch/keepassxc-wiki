@@ -8,16 +8,14 @@ The following tools must exist within your PATH:
 
 The following libraries are required:
 
-* Qt 5 (>= 5.2): qtbase and qttools5
-* libgcrypt (>= 1.7)
-* argon2
-* libsodium
-* libcurl
-* zlib
-
-The follow libraries are optional:
-* libxi, libxtst, qtx11extras (for auto-type on X11)
-* libyubikey, libykpers-1
+*  Qt5 (5.2 or newer, 5.3 or newer for compiling browser integration): qtbase and qttools5
+*  libgcrypt (1.7 or newer)
+*  libargon2
+*  zlib
+*  libxi, libxtst, qtx11extras (optional, for Auto-Type on X11/Linux)
+*  libyubikey, libykpers-1 (optional, for YubiKey support)
+*  libsodium (optional, for Browser Integration support)
+*  libcurl4 (optional, for downloading website favicons)
 
 # Building Manually
 
