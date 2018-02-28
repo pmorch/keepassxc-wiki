@@ -9,7 +9,10 @@ The following tools must exist within your PATH:
 The following libraries are required:
 
 * Qt 5 (>= 5.2): qtbase and qttools5
-* libgcrypt (>= 1.6)
+* libgcrypt (>= 1.7)
+* argon2
+* libsodium
+* libcurl
 * zlib
 
 The follow libraries are optional:
