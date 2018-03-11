@@ -23,7 +23,7 @@ The following libraries are required:
 
 Use the following guides to setup your build environment:
 * [Linux (Ubuntu/Fedora/RHEL/CentOS/Arch)](Set-up-Build-Environment-on-Linux)
-* [OS X 5.10+](Set-up-Build-Environment-on-OS-X)
+* [MacOS 10.10+](Set-up-Build-Environment-on-OS-X)
 * [Windows 7/10](Set-up-Build-Environment-on-Windows).
 
 ## 2. Building
