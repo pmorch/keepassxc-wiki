@@ -40,7 +40,7 @@ export PATH="/mingw64/bin/:$PATH"
 ### Install YubiKey libraries
 If you do not want/need the Yubikey plugin (-DWITH_XC_YUBIKEY=OFF), you can skip this step.
 
-For compiling KeePassXC with YubiKey support, two libraries are needed: libyubikey and libykpers-1.
+For compiling KeePassXC with YubiKey support, two libraries are needed: libyubikey and libykpers.
 
 #### Compile libyubikey
 Run these commands in order to build libyubikey:
@@ -53,7 +53,7 @@ make -j8
 make install
 ```
 
-#### Download libykpers-1
+#### Download libykpers
 Go back to the previous directory (`cd ..`) and run the following commands in order to install libykpers-1:
 
 ##### Windows 64-bit
