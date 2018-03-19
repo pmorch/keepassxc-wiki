@@ -75,5 +75,5 @@ unzip ykpers-1.18.1-win32.zip -d /mingw32/
 Open a MSYS2 shell:
 
 ```
-pacman -Syyuu
+pacman -Syu
 ```
