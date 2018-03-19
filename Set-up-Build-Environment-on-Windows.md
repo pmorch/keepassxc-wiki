@@ -37,8 +37,10 @@ If CMake is having trouble finding your compiler, add this line to your `/etc/pr
 export PATH="/mingw64/bin/:$PATH"
 ```
 
-### Compile and install needed YubiKey libraries
-For compiling KeePassXC with YubiKey support, two libraries are needed which don't come with Msys2: libyubikey and libykpers-1.
+### Install YubiKey libraries
+If you do not want/need the Yubikey plugin (-DWITH_XC_YUBIKEY=OFF), you can skip this step.
+
+For compiling KeePassXC with YubiKey support, two libraries are needed: libyubikey and libykpers-1.
 
 #### Compile libyubikey
 Run these commands in order to build libyubikey:
@@ -51,20 +53,22 @@ make -j8
 make install
 ```
 
-#### Compile libykpers-1
-Go back to the previous directory (`cd ..`) and run the following commands in order to build libykpers-1:
-```
-pacman -S libutil-linux-devel
-export LIBRARY_PATH=/usr/lib
+#### Download libykpers-1
+Go back to the previous directory (`cd ..`) and run the following commands in order to install libykpers-1:
 
-wget https://developers.yubico.com/yubikey-personalization/Releases/ykpers-1.18.0.tar.gz
-tar xf ykpers-*.tar.gz
-cd ykpers-*
-./configure
-make -j8
-make install
+##### Windows 64-bit
 ```
-`libutil-linux-devel` is a needed dependency for building a shared library (DLL). However, `libuuid` is not installed under the `/mingw64` prefix, so we need to give the compiler some hints where to find it by setting the `LIBRARY_PATH` environment variable. Note that this needs to be done before (!) executing `./configure`.
+pacman -Sy unzip
+wget https://developers.yubico.com/yubikey-personalization/Releases/ykpers-1.18.1-win64.zip
+unzip ykpers-1.18.1-win64.zip -d /mingw64/
+```
+
+##### Windows 32-bit
+```
+pacman -Sy unzip
+wget https://developers.yubico.com/yubikey-personalization/Releases/ykpers-1.18.1-win32.zip
+unzip ykpers-1.18.1-win32.zip -d /mingw32/
+```
 
 ### Update your environment regularly
 
