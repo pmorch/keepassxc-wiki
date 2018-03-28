@@ -34,11 +34,11 @@ sudo apt install qtbase5-dev qttools5-dev qttools5-dev-tools \
     libgcrypt20-dev libargon2-0-dev zlib1g-dev
 ```
 
-**Ubuntu 14.04** and **16.04** require newer versions of `libgcrypt20-dev`, which can be installed from [our Ubuntu PPA](https://launchpad.net/~phoerious/+archive/ubuntu/keepassxc). To avoid clashes with the upstream `libgcrypt20-dev` package, our package is named `libgcrypt20-18-dev` and installs to `/opt/libgcrypt20-18`. You therefore need to set the following environment variables for CMake to find the required libraries:
+**Ubuntu 14.04** and **16.04** require newer versions of `libgcrypt20-dev`, which can be installed from [our Ubuntu PPA](https://launchpad.net/~phoerious/+archive/ubuntu/keepassxc). To avoid clashes with the upstream `libgcrypt20-dev` package, our package is named `libgcrypt20-18-dev` and installs to `/opt/keepassxc-libs/`. You therefore need to set the following environment variables for CMake to find the required libraries:
 
 ```bash
-export CMAKE_INCLUDE_PATH="/opt/libgcrypt20-18/include:/opt/gpg-error-127/include"
-export CMAKE_LIBRARY_PATH="/opt/libgcrypt20-18/lib/x86_64-linux-gnu:/opt/gpg-error-127/lib/x86_64-linux-gnu"
+export CMAKE_INCLUDE_PATH="/opt/keepassxc-libs/include"
+export CMAKE_LIBRARY_PATH="/opt/keepassxc-libs/lib/x86_64-linux-gnu"
 ```
 
 Alternatively, these can be passed as direct parameters to `cmake` later on (`-DCMAKE_INCLUDE_PATH=... -DCMAKE_LIBRARY_PATH=...`).
