@@ -36,21 +36,9 @@ If CMake is having trouble finding your compiler, make sure you have started the
 ### Install YubiKey libraries
 If you do not want/need the Yubikey plugin (-DWITH_XC_YUBIKEY=OFF), you can skip this step.
 
-For compiling KeePassXC with YubiKey support, two libraries are needed: libyubikey and libykpers.
-
-#### Compile libyubikey
-Run these commands in order to build libyubikey:
-```
-wget https://developers.yubico.com/yubico-c/Releases/libyubikey-1.13.tar.gz
-tar xf libyubikey-*.tar.gz
-cd libyubikey-*
-./configure
-make -j8
-make install
-```
-
 #### Download libykpers
-Go back to the previous directory (`cd ..`) and run the following commands in order to install libykpers-1:
+
+For compiling KeePassXC with YubiKey support, we need some extra libraries. To install them, run the following commands:
 
 ##### Windows 64-bit
 ```
