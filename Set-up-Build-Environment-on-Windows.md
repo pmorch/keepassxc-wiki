@@ -31,7 +31,7 @@ pacman -S mingw-w64-$(uname -m)-qt5 \
     mingw-w64-$(uname -m)-argon2 mingw-w64-$(uname -m)-libsodium
 ```
 
-If CMake is having trouble finding your compiler, make sure you have started the `MINGW64` environment and not the `MINGW32` or generic `MSYS` environment. You need to have `/mingw64/bin` in your path.
+If CMake is having trouble finding your compiler, make sure you have started the `MINGW64` environment and not the `MINGW32` or the generic `MSYS` environment. You need to have `/mingw64/bin` in your path.
 
 ### Install YubiKey libraries
 If you do not want/need the Yubikey plugin (-DWITH_XC_YUBIKEY=OFF), you can skip this step.
