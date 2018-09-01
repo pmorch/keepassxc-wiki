@@ -55,14 +55,14 @@ Go back to the previous directory (`cd ..`) and run the following commands in or
 ##### Windows 64-bit
 ```
 pacman -Sy unzip
-wget https://developers.yubico.com/yubikey-personalization/Releases/ykpers-1.18.1-win64.zip
+wget https://developers.yubico.com/yubikey-personalization/Releases/ykpers-1.19.0-win64.zip
 unzip ykpers-1.18.1-win64.zip -d /mingw64/
 ```
 
 ##### Windows 32-bit
 ```
 pacman -Sy unzip
-wget https://developers.yubico.com/yubikey-personalization/Releases/ykpers-1.18.1-win32.zip
+wget https://developers.yubico.com/yubikey-personalization/Releases/ykpers-1.19.0-win32.zip
 unzip ykpers-1.18.1-win32.zip -d /mingw32/
 ```
 
