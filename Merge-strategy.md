@@ -21,7 +21,7 @@ In addition to these two branches, there are several short-lived topic branches 
 
 ## Merging Strategy and Requirements
 
-Merging a topic branch into an eternal branch should always be done in a fast-forward manner. That means it needs to be [rebased](https://git-scm.com/docs/git-rebase) properly onto the latest revision of the target branch (usually `develop`) and merging is done without creating a merge commit (`git merge --ff`). Each commit on a merged branch needs to compile, pass all tests, and be in a usable state. Unless there is a very good reason for separating individual changes, this means that all changes of a branch should be merged into a single commit once a feature has been completed.
+Merging a topic branch into an eternal or release branch should always be done in a fast-forward manner. That means it needs to be [rebased](https://git-scm.com/docs/git-rebase) properly onto the latest revision of the target branch (usually `develop`) and merging is done without creating a merge commit (`git merge --ff`). Each commit on a merged branch needs to compile, pass all tests, and be in a usable state. Unless there is a very good reason for separating individual changes, this means that all changes of a branch should be merged into a single commit once a feature has been completed.
 
 Merged commits need to be descriptive. For very small commits this means they need to have a good title. For larger commits, add an exhaustive description about what the patch does and why after the title. Reference issues liberally.
 
