@@ -9,15 +9,15 @@ In addition to these two branches, there are several short-lived topic branches 
 - **`feature/<issue#-description>`**: new features or non-critical fixes<br>
    *Branch from:* `develop`<br>
    *Merge back into:* `develop` 
-- **`release/<x.y.z>`**: release preparation branch for version *&lt;x.y.z&gt;*, marks beginning of feature freeze<br>
-   *Branch from:* `develop`<br>
-   *Merge back into:* `master`
 - **`hotfix/<issue#-description>`**: maintenance branch for bugfixes in released versions<br>
    *Branch from:* `release/<x.y.z>`<br>
    *Merge back into:* `release/<x.y.z>`, `develop`
 - **`meta/<description>`**: patches that don't directly affect the application (documentation, build organization etc.)<br>
    *Branch from:* `develop`<br>
    *Merge back into:* `develop`
+- **`release/<x.y.z>`**: release preparation branch for version *&lt;x.y.z&gt;*, marks beginning of feature freeze<br>
+   *Branch from:* `develop`<br>
+   *Merge back into:* `master`
 
 ## Merging Strategy and Requirements
 
