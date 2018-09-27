@@ -4,6 +4,20 @@
 
 **Major improvements are tagged with ⭐️.**
 
+2.3.4 (2018-08-23)
+=========================
+
+- Show all URL schemes in entry view [#1768]
+- Disable merge when database is locked [#1975]
+- Fix intermittent crashes with favorite icon downloads [#1980]
+- Provide potential crash warning to Qt 5.5.x users [#2211]
+- Disable apply button when creating new entry/group to prevent data loss [#2204]
+- Multiple SSH Agent fixes [#1981, #2117]
+- Multiple Browser Integration enhancements [#1993, #2003, #2055, #2116, #2159, #2174, #2185]
+- Fix browser proxy application not closing properly [#2142]
+- Add real names and Patreon supporters to about dialog [#2214]
+- Add settings button to toolbar, Donate button, and Report a Bug button to help menu [#2214]
+
 2.3.3 (2018-05-08)
 =========================
 
