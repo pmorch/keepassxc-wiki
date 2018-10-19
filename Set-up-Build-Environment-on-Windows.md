@@ -19,6 +19,14 @@ pacman -S git make mingw-w64-$(uname -m)-gcc \
     mingw-w64-$(uname -m)-binutils mingw-w64-$(uname -m)-cmake
 ```
 
+In addition, CLion needs
+
+```
+pacman -S mingw-w64-$(uname -m)-toolchain
+```
+
+to detect your Msys2 toolchain.
+
 ### Install the required dependencies
 
 This command will install `qt5` `libgcrypt` and `zlib`
