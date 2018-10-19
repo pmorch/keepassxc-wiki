@@ -24,7 +24,7 @@ Then install the required libraries (zlib already exists on macOS Sierra so it i
 Open a Terminal:
 
 ```
-brew install qt5 libgcrypt argon2 libyubikey ykpers libsodium
+brew install qt5 libgcrypt argon2 libyubikey ykpers qrencode libsodium
 ```
 
 ### Update your environment regularly
