@@ -48,7 +48,7 @@ Alternatively, these can be passed as direct parameters to `cmake` later on (`-D
 On **Fedora/RHEL/CentOS**:
 
 ```bash
-sudo dnf install qt5-qtbase-devel qt5-linguist qt5-qttools \
+sudo dnf install qt5-qtbase-devel qt5-linguist qt5-qttools libqt5svg5-devel \
     libgcrypt-devel libargon2-devel qrencode-devel zlib-devel
 ```
 
