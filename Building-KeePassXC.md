@@ -36,7 +36,7 @@ or pull them directly from Git (note: default branch is ```develop```):
 ```
 git clone https://github.com/keepassxreboot/keepassxc.git
 ```
-Now change into the source directory and run the following commands:
+Now change into the source directory and run the following commands. If you would like to run tests after building, add ```-DWITH_TESTS=ON -DWITH_GUI_TESTS=ON``` before the ..
 ```
 mkdir build
 cd build
