@@ -63,6 +63,11 @@ wget https://developers.yubico.com/yubikey-personalization/Releases/ykpers-1.19.
 unzip ykpers-1.*-win32.zip -d /mingw32/
 ```
 
+### Packaging Requirements
+To build an installation package when running ```make package``` you need to have the WiX toolset installed. You can obtain it from https://github.com/wixtoolset/wix3/releases
+
+Once installed you will need to add the toolset folder to your MSYS PATH environment: ```export PATH="${PATH}:/c/Program Files (x86)/WiX Toolset v3.11/bin"```
+
 ### Update your environment regularly
 
 Open a MSYS2 shell:
