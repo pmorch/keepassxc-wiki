@@ -31,8 +31,9 @@ On **Debian/Ubuntu**:
 
 ```bash
 sudo apt install qtbase5-dev qttools5-dev qttools5-dev-tools libqt5svg5-dev \
-    libgcrypt20-dev libargon2-0-dev libqrencode-dev zlib1g-dev
+    libgcrypt20-dev libargon2-dev libqrencode-dev zlib1g-dev
 ```
+**Ubuntu 18.04 and below** replace ```libargon2-dev``` with ```libargon2-0-dev```
 
 **Ubuntu 14.04** and **16.04** require newer versions of `libgcrypt20-dev`, which can be installed from [our Ubuntu PPA](https://launchpad.net/~phoerious/+archive/ubuntu/keepassxc). To avoid clashes with the upstream `libgcrypt20-dev` package, our package is named `libgcrypt20-18-dev` and installs to `/opt/keepassxc-libs/`. You therefore need to set the following environment variables for CMake to find the required libraries:
 
