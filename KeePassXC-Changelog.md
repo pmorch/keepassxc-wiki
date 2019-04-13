@@ -6,10 +6,10 @@
 
 2.4.1 (2019-04-13)
 =========================
-- Fix database deletion when using unsafe saves to a different file system [#2889]
-- Fix opening databases with legacy key files that contain '/' [#2872]
+- Fix database deletion when using unsafe saves to a different file system [#2889] ⭐️
+- Fix opening databases with legacy key files that contain '/' [#2872] ⭐️
 - Fix opening database files from the command line [#2919]
-- Fix crash when editing master key [#2836]
+- Fix crash when editing master key [#2836] ⭐️
 - Fix multiple issues with apply button behavior [#2947]
 - Fix issues on application startup (tab order, --pw-stdin, etc.) [#2830]
 - Fix building without WITH_XC_KEESHARE
