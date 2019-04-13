@@ -4,6 +4,65 @@
 
 **Major improvements are tagged with ⭐️.**
 
+2.4.1 (2019-04-13)
+=========================
+- Fix database deletion when using unsafe saves to a different file system [#2889]
+- Fix opening databases with legacy key files that contain '/' [#2872]
+- Fix opening database files from the command line [#2919]
+- Fix crash when editing master key [#2836]
+- Fix multiple issues with apply button behavior [#2947]
+- Fix issues on application startup (tab order, --pw-stdin, etc.) [#2830]
+- Fix building without WITH_XC_KEESHARE
+- Fix reference entry coloring on macOS dark mode [#2984]
+- Hide window when performing entry auto-type on macOS [#2969]
+- Improve UX of update checker; reduce checks to every 7 days [#2968] ⭐️
+- KeeShare improvements [#2946, #2978, #2824]
+- Re-enable Ctrl+C to copy password from search box [#2947]
+- Add KeePassXC-Browser integration for Brave browser [#2933]
+- SSH Agent: Re-Add keys on database unlock [#2982]
+- SSH Agent: Only remove keys on app exit if they are removed on lock [#2985]
+- CLI: Add --no-password option [#2708]
+- CLI: Improve database extraction to XML [#2698]
+- CLI: Don't call mandb on build [#2774]
+- CLI: Add debug info [#2714]
+- Improve support for Snap theming [#2832]
+- Add support for building on Haiku OS [#2859]
+- Ctrl+PgDn now goes to the next tab and Ctrl+PgUp to the previous
+- Fix compiling on GCC 5 / Xenial [#2990]
+- Add .gitrev output to tarball for third-party builds [#2970]
+- Add WITH_XC_UPDATECHECK compile flag to toggle the update checker [#2968]
+
+2.4.0 (2019-03-20)
+=========================
+- New Database Wizard [#1952] ⭐️
+- Advanced Search [#1797] ⭐️
+- Automatic update checker [#2648] ⭐️
+- KeeShare database synchronization [#2109, #1992, #2738, #2742, #2746, #2739] ⭐️
+- Improve favicon fetching; transition to Duck-Duck-Go [#2795, #2011, #2439] ⭐️
+- Remove KeePassHttp support [#1752]
+- CLI: output info to stderr for easier scripting [#2558] ⭐️
+- CLI: Add --quiet option [#2507]
+- CLI: Add create command [#2540]
+- CLI: Add recursive listing of entries [#2345]
+- CLI: Fix stdin/stdout encoding on Windows [#2425]
+- SSH Agent: Support OpenSSH for Windows [#1994] ⭐️
+- macOS: TouchID Quick Unlock [#1851] ⭐️
+- macOS: Multiple improvements; include CLI in DMG [#2165, #2331, #2583] ⭐️
+- Linux: Prevent Klipper from storing secrets in clipboard [#1969] 🔒
+- Linux: Use polling based file watching for NFS [#2171]
+- Linux: Enable use of browser plugin in Snap build [#2802] ⭐️
+- TOTP QR Code Generator [#1167]
+- High-DPI Scaling for 4k screens [#2404] ⭐️
+- Make keyboard shortcuts more consistent [#2431]
+- Warn user if deleting referenced entries [#1744]
+- Allow toolbar to be hidden and repositioned [#1819, #2357]
+- Increase max allowed database timeout to 12 hours [#2173]
+- Password generator uses existing password length by default [#2318]
+- Improve alert message box button labels [#2376]
+- Show message when a database merge makes no changes [#2551]
+- Browser Integration Enhancements [#1497, #2253, #1904, #2232, #1850, #2218, #2391, #2396, #2542, #2622, #2637, #2790]
+- Overall Code Improvements [#2316, #2284, #2351, #2402, #2410, #2419, #2422, #2443, #2491, #2506, #2610, #2667, #2709, #2731]
+
 2.3.4 (2018-08-23)
 =========================
 
