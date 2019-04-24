@@ -8,14 +8,43 @@ The following tools must exist within your PATH:
 
 The following libraries are required:
 
-*  Qt5 (5.2 or newer, 5.3 or newer for compiling browser integration): qtbase and qttools5
-*  libgcrypt (1.7 or newer)
-*  libargon2
-*  zlib
-*  libxi, libxtst, qtx11extras (optional, for Auto-Type on X11/Linux)
-*  libyubikey, libykpers-1 (optional, for YubiKey support)
-*  libsodium (optional, for Browser Integration support)
-*  libcurl4 (optional, for downloading website favicons)
+* Qt 5 (>= 5.2): qtbase and qttools5
+* libgcrypt (>= 1.6)
+* zlib
+* libmicrohttpd
+* libxi, libxtst, qtx11extras (optional for auto-type on X11)
+* libsodium (>= 1.0.12)
+* libargon2
+
+# Build Options
+
+KeePassXC comes with a variety of build options that can turn on/off features. Most notably, we allow you to build the application with all TCP/IP networking code disabled. Please note that we still require and link against Qt5's network library in order to use local named pipes on all operating systems. Each of these build options are supplied at the time of calling cmake. For example: ```cmake -DWITH_XC_AUTOTYPE=ON -DWITH_XC_NETWORKING=OFF -DWITH_XC_KEESHARE=ON ..```
+
+```
+-DWITH_XC_AUTOTYPE=[ON|OFF] Enable/Disable Auto-Type (default: ON)
+-DWITH_XC_YUBIKEY=[ON|OFF] Enable/Disable YubiKey HMAC-SHA1 authentication support (default: OFF)
+-DWITH_XC_BROWSER=[ON|OFF] Enable/Disable KeePassXC-Browser extension support (default: OFF)
+-DWITH_XC_NETWORKING=[ON|OFF] Enable/Disable Networking support (e.g., favicon downloading) (default: OFF)
+-DWITH_XC_SSHAGENT=[ON|OFF] Enable/Disable SSHAgent support (default: OFF)
+-DWITH_XC_TOUCHID=[ON|OFF] (macOS Only) Enable/Disable Touch ID unlock (default:OFF)
+-DWITH_XC_KEESHARE=[ON|OFF] Enable/Disable KeeShare group synchronization extension (default: OFF)
+-DWITH_XC_KEESHARE_SECURE=[ON|OFF] Enable/Disable KeeShare signed containers, requires libquazip5 (default: OFF)
+-DWITH_XC_ALL=[ON|OFF] Enable/Disable compiling all plugins above (default: OFF)
+
+-DWITH_XC_UPDATECHECK=[ON|OFF] Enable/Disable automatic updating checking (requires WITH_XC_NETWORKING) (default: ON)
+
+-DWITH_TESTS=[ON|OFF] Enable/Disable building of unit tests (default: ON)
+-DWITH_GUI_TESTS=[ON|OFF] Enable/Disable building of GUI tests (default: OFF)
+-DWITH_DEV_BUILD=[ON|OFF] Enable/Disable deprecated method warnings (default: OFF)
+-DWITH_ASAN=[ON|OFF] Enable/Disable address sanitizer checks (Linux / macOS only) (default: OFF)
+-DWITH_COVERAGE=[ON|OFF] Enable/Disable coverage tests (GCC only) (default: OFF)
+-DWITH_APP_BUNDLE=[ON|OFF] Enable Application Bundle for macOS (default: ON)
+
+-DKEEPASSXC_BUILD_TYPE=[Snapshot|PreRelease|Release] Set the build type to show/hide stability warnings (default: "Snapshot")
+-DKEEPASSXC_DIST_TYPE=[Snap|AppImage|Other] Specify the distribution method (default: "Other")
+-DOVERRIDE_VERSION=[X.X.X] Specify a version number when building. Used with snapshot builds (default: "")
+-DGIT_HEAD_OVERRIDE=[XXXXXXX] Specify the 7 digit git commit ref for this build. Used with distribution builds (default: "")
+```
 
 # Building Manually
 
