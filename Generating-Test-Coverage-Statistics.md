@@ -4,6 +4,12 @@ Please follow either the [Linux](Set-up-Build-Environment-on-Linux), [OS X](Set-
 ### Prerequisites
 Obtain the following packages prior to beginning the coverage process: **gcov** and **lcov**
 
+**Ubuntu Linux:** ```sudo apt install gcovr lcov```
+
+**MSYS2:** ```pacman -Su mingw-w64-x86_64-lcov```
+
+**macOS:** ```brew install gcovr lcov```
+
 ### Build Process
 
 1. Make a build directory for cmake and enter it
