@@ -32,7 +32,7 @@ brew install qt5 libgcrypt argon2 qrencode libsodium
 These dependencies are only needed if you build with -DWITH_XC_ALL=ON or the specific option you are building:
 
 ```
-brew install libyubikey ykpers
+brew install libyubikey ykpers quazip
 ```
 
 ### Update your environment regularly
