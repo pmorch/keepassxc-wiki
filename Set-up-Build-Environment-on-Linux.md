@@ -67,8 +67,8 @@ These are required to build Auto-Type, Yubikey and browser integration support.
 On **Debian/Ubuntu**:
 
 ```bash
-sudo apt install libxi-dev libxtst-dev libqt5x11extras5-dev \
-    libyubikey-dev libykpers-1-dev libsodium-dev libcurl4-openssl-dev
+sudo apt install libxi-dev libxtst-dev libqt5x11extras5-dev libyubikey-dev \
+     libykpers-1-dev libsodium-dev libcurl4-openssl-dev libquazip5-dev
 ```
 
 For **Ubuntu 14.04**, the `libsodium-dev` package is provided through our PPA, see above.
@@ -78,7 +78,7 @@ On **Fedora/RHEL/CentOS**:
 ```bash
 sudo dnf install libXi-devel libXtst-devel qt5-qtx11extras \
     qt5-qtx11extras-devel libyubikey-devel ykpers-devel \
-    libsodium-devel libcurl-devel
+    libsodium-devel libcurl-devel quazip-qt5-devel
 ```
 
 **CentOS** requires more up-to-date packages, provided here: https://copr.fedorainfracloud.org/coprs/bugzy/keepassxc/
@@ -86,7 +86,7 @@ sudo dnf install libXi-devel libXtst-devel qt5-qtx11extras \
 On **Arch Linux**:
 ```bash
 sudo pacman -S libxi libxtst qt5-x11extras qt5-tools \
-    yubico-c yubikey-personalization libsodium curl
+    yubico-c yubikey-personalization libsodium curl quazip-0.7.6-1
 ```
 
 ### Update your environment regularly
