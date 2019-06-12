@@ -4,6 +4,43 @@
 
 **Major improvements are tagged with ⭐️.**
 
+2.4.3 (2019-06-12)
+=========================
+
+- Fix library loading issues in the Snap and macOS releases [#3247] ⭐️
+- Fix various keyboard navigation issues [#3248]
+- Fix main window toggling regression when clicking the tray icon on KDE [#3258]
+- Add documentation for keyboard shortcuts to source code distribution [#3215]
+
+2.4.2 (2019-05-31)
+=========================
+
+- Improve resilience against memory attacks - overwrite memory before free [#3020] ⭐️ 🔒
+- Prevent infinite save loop when location is unavailable [#3026]
+- Attempt to fix quitting application when shutdown or logout issued [#3199]
+- Support merging database custom data [#3002]
+- Fix opening URL's with non-http schemes [#3153]
+- Fix data loss due to not reading all database attachments if duplicates exist [#3180]
+- Fix entry context menu disabling when using keyboard navigation [#3199]
+- Fix behaviors when canceling an entry edit [#3199]
+- Fix processing of tray icon click and doubleclick [#3112]
+- Update group in preview widget when focused [#3199]
+- Prefer DuckDuckGo service over direct icon download (increases resolution) [#2996] ⭐️
+- Remove apply button in application settings [#3019]
+- Use winqtdeploy on Windows to correct deployment issues [#3025] ⭐️
+- Don't mark entry edit as modified when attribute selection changes [#3041]
+- Use console code page CP_UTF8 on Windows if supported [#3050] ⭐️
+- Snap: Fix locking database with session lock [#3046]
+- Snap: Fix theming across Linux distributions [#3057]
+- Snap: Use SNAP_USER_COMMON and SNAP_USER_DATA directories [#3131]
+- KeeShare: Automatically enable WITH_XC_KEESHARE_SECURE if quazip is found [#3088]
+- macOS: Fix toolbar text when in dark mode [#2998]
+- macOS: Lock database on switching user [#3097]
+- macOS: Fix global Auto-Type when the database is locked [#3138]
+- Browser: Close popups when database is locked [#3093]
+- Browser: Add tests [#3016]
+- Browser: Don't create default group if custom group is enabled [#3127]
+
 2.4.1 (2019-04-13)
 =========================
 - Fix database deletion when using unsafe saves to a different file system [#2889] ⭐️
