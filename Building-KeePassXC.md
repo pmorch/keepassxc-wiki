@@ -209,12 +209,12 @@ If you are not a KeePassXC maintainer, the only interesting command for you is `
 When not specified otherwise, it will create a directory called `release` containing the build directory, a source tarball and the packaged binary bundles. On Linux, there will also be a directory `release-bin` inside the `release` directory, containing stripped versions of all the compiled binaries without additional dependencies.
 
 # Building inside a Docker container
-The `release-tool` also allows you to build KeePassXC inside a Docker container on Linux. This is important when building a cross-platform `AppImage` to ensure the used library versions are not too new. To build the needed Docker image, run
+The `release-tool` also allows you to build KeePassXC inside a Docker container on Linux. This is important when building a cross-platform `AppImage`. To pull the needed Docker image, run
 ```
-docker build --no-cache -t keepassxc/ubuntu:14.04 .
+docker pull keepassxc/keepassxc-ci
 ```
-inside the source directory. This will build a Docker image with the name `keepassxc/ubuntu:14.04` from the `Dockerfile` provided inside the directory. You can then start the build process with
+This will pull the latest Docker image from the Docker hub registry. You can then start the build process with
 ```
-./release-tool build -v VERSION -d keepassxc/ubuntu:14.04
+./release-tool build -v VERSION --appimage -d keepassxc/keepassxc-ci
 ```
 **Important:** rebuild the image regularly with `--no-cache` to ensure it has the latest security updates!
