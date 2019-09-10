@@ -13,7 +13,6 @@ Obtain the following packages prior to beginning the coverage process: **gcov** 
 ### Build Process
 
 1. Make a build directory for cmake and enter it
-2. ```cmake -DCMAKE_BUILD_TYPE=Coverage -DWITH_COVERAGE=ON -DWITH_TESTS=ON -DWITH_GUI_TESTS=ON -DWITH_XC_ALL=ON ..```
-3. `make -j4`
-4. `make kp_coverage`
-5. Open up **./coverage/index.html** to view the coverage report
+2. ```cmake -DCMAKE_BUILD_TYPE=Debug -DWITH_COVERAGE=ON -DWITH_TESTS=ON -DWITH_GUI_TESTS=ON -DWITH_XC_ALL=ON ..```
+3. `make coverage -j4`
+4. Open up **./coverage/index.html** to view the coverage report
