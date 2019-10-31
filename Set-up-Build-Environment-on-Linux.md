@@ -68,7 +68,7 @@ On **Debian/Ubuntu**:
 
 ```bash
 sudo apt install libxi-dev libxtst-dev libqt5x11extras5-dev libyubikey-dev \
-     libykpers-1-dev libsodium-dev libcurl4-openssl-dev libquazip5-dev
+     libykpers-1-dev libsodium-dev libcurl4-openssl-dev libquazip5-dev libreadline-dev
 ```
 
 For **Ubuntu 14.04**, the `libsodium-dev` package is provided through our PPA, see above.
