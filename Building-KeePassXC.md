@@ -107,7 +107,7 @@ If you installed via Homebrew, you should be able to compile KeePassXC this way,
 (or whatever your Qt installation path is)
 
 ### Windows
-In an Msys terminal, download and unpack the source code as described in the [Linux](#linux) section, change into the source code directory and run:
+In a _MSYS2 MinGW_ terminal (*not* _MSYS2 MSYS_ which is the default), download and unpack the source code as described in the [Linux](#linux) section, change into the source code directory and run:
 
 ```
 mkdir build
