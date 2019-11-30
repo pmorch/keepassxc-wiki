@@ -57,7 +57,7 @@ sudo dnf install qt5-qtbase-devel qt5-linguist qt5-qttools qt5-qtsvg-devel \
 
 On **Arch Linux**:
 ```bash
-sudo pacman -S qt5-base qt5-tools libgcrypt argon2 qrencode libsodium zlib
+sudo pacman -S qt5-base qt5-tools argon2 libgcrypt libsodium qrencode zlib
 ```
 
 ### Install the optional dependencies
