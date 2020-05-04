@@ -30,8 +30,9 @@ sudo pacman -S cmake make gcc-multilib
 On **Debian/Ubuntu**:
 
 ```bash
-sudo apt install qtbase5-dev qtbase5-private-dev qttools5-dev qttools5-dev-tools \
-    libqt5svg5-dev libgcrypt20-dev libargon2-dev libqrencode-dev libsodium-dev zlib1g-dev
+sudo apt install qtbase5-dev qtbase5-private-dev qttools5-dev \
+    qttools5-dev-tools libqt5svg5-dev libgcrypt20-dev libargon2-dev \
+    libqrencode-dev libsodium-dev zlib1g-dev
 ```
 **Ubuntu 18.04 and below** replace ```libargon2-dev``` with ```libargon2-0-dev```
 
