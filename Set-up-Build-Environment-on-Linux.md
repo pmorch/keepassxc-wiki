@@ -32,7 +32,7 @@ On **Debian/Ubuntu**:
 ```bash
 sudo apt install qtbase5-dev qtbase5-private-dev qttools5-dev \
     qttools5-dev-tools libqt5svg5-dev libgcrypt20-dev libargon2-dev \
-    libqrencode-dev libsodium-dev zlib1g-dev
+    libqrencode-dev libsodium-dev zlib1g-dev asciidoctor
 ```
 **Ubuntu 18.04 and below** replace ```libargon2-dev``` with ```libargon2-0-dev```
 
@@ -51,14 +51,15 @@ On **Fedora/RHEL/CentOS**:
 
 ```bash
 sudo dnf install qt5-qtbase-devel qt5-linguist qt5-qttools qt5-qtsvg-devel \
-    libgcrypt-devel libargon2-devel libsodium-devel qrencode-devel zlib-devel
+    libgcrypt-devel libargon2-devel libsodium-devel qrencode-devel zlib-devel \
+    rubygem-asciidoctor
 ```
 
 **CentOS** requires more up-to-date packages, provided here: https://copr.fedorainfracloud.org/coprs/bugzy/keepassxc/
 
 On **Arch Linux**:
 ```bash
-sudo pacman -S qt5-base qt5-tools argon2 libgcrypt libsodium qrencode zlib
+sudo pacman -S qt5-base qt5-tools argon2 libgcrypt libsodium qrencode zlib asciidoctor
 ```
 
 ### Install the optional dependencies
