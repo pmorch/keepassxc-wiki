@@ -31,5 +31,5 @@ KeePassXC has numerous features for novice and power users alike. This guide wil
 * FreeDesktop.org Secret Service (replace Gnome keyring, etc.)
 * Additional encryption choices: Twofish and ChaCha20
 
-For a full list of changes, read the [CHANGELOG](CHANGELOG.md) document. \
+For a full list of changes, read the [CHANGELOG](https://github.com/keepassxreboot/keepassxc/tree/develop/CHANGELOG.md) document. \
 For a full list of keyboard shortcuts, see [KeyboardShortcuts.adoc](https://github.com/keepassxreboot/keepassxc/tree/develop/docs/topics/KeyboardShortcuts.adoc)
