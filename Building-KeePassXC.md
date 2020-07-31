@@ -15,6 +15,7 @@ The following libraries are required:
 * libxi, libxtst, qtx11extras (optional for auto-type on X11)
 * libsodium (>= 1.0.12)
 * libargon2
+* qrencode
 * asciidoctor (>= 2.0)
 
 # Build Options
