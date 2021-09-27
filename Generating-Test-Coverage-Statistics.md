@@ -1,5 +1,5 @@
 ### Setup build environment
-Please follow either the [Linux](Set-up-Build-Environment-on-Linux), [OS X](Set-up-Build-Environment-on-OS-X), or [Windows](Set-up-Build-Environment-on-Windows) guides to setup your environment.
+Please follow either the [Linux](Set-up-Build-Environment-on-Linux), [macOS](Set-up-Build-Environment-on-macOS), or [Windows](Set-up-Build-Environment-on-Windows) guides to setup your environment.
 
 ### Prerequisites
 With `gcc` as your compiler, install `gcovr` to generate coverage profiles:
