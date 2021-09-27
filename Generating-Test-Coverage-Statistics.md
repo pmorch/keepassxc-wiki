@@ -12,7 +12,7 @@ With `clang`, you need `llvm` installed:
 
 - **Ubuntu Linux:** ```sudo apt install llvm```
 - **MSYS2:** ```pacman -Su mingw-w64-x86_64-llvm```
-- **macOS:** ```xcode-select —install``` (should already be done if you have `clang` installed)
+- **macOS:** ```xcode-select --install``` (should already be done if you have `clang` installed)
 
 ### Build Process
 
