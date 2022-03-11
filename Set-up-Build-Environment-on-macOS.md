@@ -24,15 +24,7 @@ Then install the required libraries (zlib already exists on macOS Sierra so it i
 Open a Terminal:
 
 ```
-brew install qt5 libgcrypt argon2 qrencode libsodium asciidoctor
-```
-
-### Install optional dependencies
-
-These dependencies are only needed if you build with -DWITH_XC_ALL=ON or the specific option you are building:
-
-```
-brew install libyubikey ykpers quazip
+brew install qt5 argon2 botan qrencode asciidoctor
 ```
 
 ### Update your environment regularly
