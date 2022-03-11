@@ -2,19 +2,19 @@
 
 The following tools must exist within your PATH:
 
-* make
-* cmake (>= 3.1)
-* g++ (>= 4.7) or clang++ (>= 3.0)
+* make or ninja
+* cmake (>= 3.3)
+* g++ (>= 9.3) or clang++ (>= 10.0)
 
 The following libraries are required:
 
 * Qt 5 (>= 5.2): qtbase and qttools5
-* libgcrypt (>= 1.6)
+* botan (>= 2.11)
 * zlib
-* libmicrohttpd
 * libxi, libxtst, qtx11extras (optional for auto-type on X11)
-* libsodium (>= 1.0.12)
 * libargon2
+* readline (for cli history)
+* pcsc-lite (Linux only)
 * qrencode
 * asciidoctor (>= 2.0)
 
@@ -28,9 +28,7 @@ KeePassXC comes with a variety of build options that can turn on/off features. M
 -DWITH_XC_BROWSER=[ON|OFF] Enable/Disable KeePassXC-Browser extension support (default: OFF)
 -DWITH_XC_NETWORKING=[ON|OFF] Enable/Disable Networking support (e.g., favicon downloading) (default: OFF)
 -DWITH_XC_SSHAGENT=[ON|OFF] Enable/Disable SSHAgent support (default: OFF)
--DWITH_XC_TOUCHID=[ON|OFF] (macOS Only) Enable/Disable Touch ID unlock (default:OFF)
 -DWITH_XC_KEESHARE=[ON|OFF] Enable/Disable KeeShare group synchronization extension (default: OFF)
--DWITH_XC_KEESHARE_SECURE=[ON|OFF] Enable/Disable KeeShare signed containers, requires libquazip5 (default: OFF)
 -DWITH_XC_ALL=[ON|OFF] Enable/Disable compiling all plugins above (default: OFF)
 
 -DWITH_XC_UPDATECHECK=[ON|OFF] Enable/Disable automatic updating checking (requires WITH_XC_NETWORKING) (default: ON)
@@ -54,8 +52,8 @@ KeePassXC comes with a variety of build options that can turn on/off features. M
 
 Use the following guides to setup your build environment:
 * [Linux (Ubuntu/Fedora/RHEL/CentOS/Arch)](Set-up-Build-Environment-on-Linux)
-* [MacOS 10.10+](Set-up-Build-Environment-on-OS-X)
-* [Windows 7/10](Set-up-Build-Environment-on-Windows).
+* [MacOS 10.15+](Set-up-Build-Environment-on-OS-X)
+* [Windows 10/11](Set-up-Build-Environment-on-Windows).
 
 ## 2. Building
 ### Linux
