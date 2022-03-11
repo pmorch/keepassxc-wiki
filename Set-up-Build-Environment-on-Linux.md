@@ -30,65 +30,28 @@ sudo pacman -S cmake make gcc-multilib
 On **Debian/Ubuntu**:
 
 ```bash
-sudo apt install qtbase5-dev qtbase5-private-dev qttools5-dev \
-    qttools5-dev-tools libqt5svg5-dev libgcrypt20-dev libargon2-dev \
-    libqrencode-dev libsodium-dev zlib1g-dev asciidoctor
+sudo apt install qtbase5-dev qtbase5-private-dev qttools5-dev qttools5-dev-tools \
+    libqt5svg5-dev libargon2-dev libminizip-dev libbotan-2-dev libqrencode-dev \
+    zlib1g-dev asciidoctor libreadline-dev libpcsclite-dev libxi-dev libxtst-dev \
+    libqt5x11extras5-dev
 ```
 **Ubuntu 18.04 and below** replace ```libargon2-dev``` with ```libargon2-0-dev```
-
-**Ubuntu 14.04** and **16.04** require newer versions of `libgcrypt20-dev`, which can be installed from [our Ubuntu PPA](https://launchpad.net/~phoerious/+archive/ubuntu/keepassxc). To avoid clashes with the upstream `libgcrypt20-dev` package, our package is named `libgcrypt20-18-dev` and installs to `/opt/keepassxc-libs/`. You therefore need to set the following environment variables for CMake to find the required libraries:
-
-```bash
-export CMAKE_INCLUDE_PATH="/opt/keepassxc-libs/include"
-export CMAKE_LIBRARY_PATH="/opt/keepassxc-libs/lib/x86_64-linux-gnu"
-```
-
-Alternatively, these can be passed as direct parameters to `cmake` later on (`-DCMAKE_INCLUDE_PATH=... -DCMAKE_LIBRARY_PATH=...`).
-
-**Ubuntu 14.04** is also missing the required `libargon2-0-dev` package, which can be installed from the same PPA.
 
 On **Fedora/RHEL/CentOS**:
 
 ```bash
 sudo dnf install qt5-qtbase-devel qt5-qtbase-private-devel qt5-linguist qt5-qttools \
-    qt5-qtsvg-devel libgcrypt-devel libargon2-devel libsodium-devel qrencode-devel \
-    zlib-devel rubygem-asciidoctor
+    qt5-qtsvg-devel libargon2-devel qrencode-devel botan2-devel readline-devel \
+    zlib-devel rubygem-asciidoctor pcsc-lite-devel libXi-devel libXtst-devel \
+    qt5-qtx11extras-devel
 ```
 
 **CentOS** requires more up-to-date packages, provided here: https://copr.fedorainfracloud.org/coprs/bugzy/keepassxc/
 
 On **Arch Linux**:
 ```bash
-sudo pacman -S qt5-base qt5-tools argon2 libgcrypt libsodium qrencode zlib asciidoctor
-```
-
-### Install the optional dependencies
-
-These are required to build Auto-Type, Yubikey and browser integration support.
-
-On **Debian/Ubuntu**:
-
-```bash
-sudo apt install libxi-dev libxtst-dev libqt5x11extras5-dev libyubikey-dev \
-     libykpers-1-dev libquazip5-dev libreadline-dev
-```
-
-For **Ubuntu 14.04**, the `libsodium-dev` package is provided through our PPA, see above.
-
-On **Fedora/RHEL/CentOS**:
-
-```bash
-sudo dnf install libXi-devel libXtst-devel qt5-qtx11extras \
-    qt5-qtx11extras-devel libyubikey-devel ykpers-devel \
-    quazip-qt5-devel
-```
-
-**CentOS** requires more up-to-date packages, provided here: https://copr.fedorainfracloud.org/coprs/bugzy/keepassxc/
-
-On **Arch Linux**:
-```bash
-sudo pacman -S libxi libxtst qt5-x11extras qt5-tools \
-    yubico-c yubikey-personalization quazip-0.7.6-1
+sudo pacman -S qt5-base qt5-tools argon2 botan qrencode zlib asciidoctor readline \
+    pcsclite libxi libxtst qt5-x11extras
 ```
 
 ### Update your environment regularly
