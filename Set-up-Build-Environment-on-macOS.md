@@ -19,8 +19,6 @@ brew install cmake
 
 ### Install the required dependencies
 
-Then install the required libraries (zlib already exists on macOS Sierra so it is not needed to install it):
-
 Open a Terminal:
 
 ```
