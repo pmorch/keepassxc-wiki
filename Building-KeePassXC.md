@@ -8,7 +8,7 @@ The following tools must exist within your PATH:
 
 The following libraries are required:
 
-* Qt 5 (>= 5.2): qtbase and qttools5
+* Qt 5 (>= 5.9.5): qtbase and qttools5
 * botan (>= 2.11)
 * zlib
 * libxi, libxtst, qtx11extras (optional for auto-type on X11)
