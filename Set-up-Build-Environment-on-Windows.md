@@ -12,14 +12,19 @@ We recommend building KeePassXC using Visual Studio to maximize feature availabi
 
 3. (Optional) Instead of the entire IDE, you may install [Visual Studio Build Tools](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022) and use [VSCode](https://code.visualstudio.com/download) as an IDE.
 
-### Install Vcpkg and Dependencies
-1. Download and install Vcpkg: https://vcpkg.io/en/getting-started.html
+### Install vcpkg and Dependencies
+**Recommended Option:**
 
-2. From the KeePassXC source directory, navigate to `utils\vcpkg_ports`. Copy all folders within this directory to your Vcpkg ports subfolder.
+KeePassXC provides a pre-built dependency bundle to save time building them yourself. Simply download and unzip the pre-built dependency package to a folder of your choice. Download here: https://kpxcstorage.blob.core.windows.net/vcpkg/vcpkg-export-20220310-221613.zip
+
+**Alternative Option:**
+1. Download and install vcpkg: https://vcpkg.io/en/getting-started.html
+
+2. From the KeePassXC source directory, navigate to `utils\vcpkg_ports`. Copy all folders within this directory to your vcpkg ports subfolder.
 
 ![image](https://user-images.githubusercontent.com/2809491/157793947-c248b8e1-e1e2-4872-8ffa-45691f1d3123.png)
 
-2. Open a command prompt to the Vcpkg directory and run: 
+2. Open a command prompt to the vcpkg directory and run the following command. This will take up to an hour to complete the build process. 
 
 `.\vcpkg.exe install argon2 botan minizip qt5 qt5-svg qt5-tools qt5-imageformats readline zlib libqrencode --triplet=x64-windows`
 
@@ -61,8 +66,8 @@ Open an MSYS2 shell:
 ```
 pacman -S mingw-w64-$(uname -m)-qt5 \
     mingw-w64-$(uname -m)-libbotan mingw-w64-$(uname -m)-zlib \
-    mingw-w64-$(uname -m)-argon2 mingw-w64-$(uname -m)-libusb \
-    mingw-w64-$(uname -m)-qrencode mingw-w64-$(uname -m)-asciidoctor
+    mingw-w64-$(uname -m)-argon2 mingw-w64-$(uname -m)-qrencode \
+    mingw-w64-$(uname -m)-asciidoctor
 ```
 
 ### Packaging Requirements
