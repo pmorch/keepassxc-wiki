@@ -22,7 +22,7 @@ brew install cmake
 Open a Terminal:
 
 ```
-brew install qt5 argon2 botan qrencode asciidoctor readline
+brew install qt5 argon2 botan qrencode asciidoctor readline minizip
 ```
 
 ### Update your environment regularly
