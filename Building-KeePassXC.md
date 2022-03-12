@@ -1,22 +1,28 @@
 # Required Dependencies
 
+KeePassXC supports the following Operating Systems:
+* Windows 10 and 11
+* MacOS 10.15+
+* Linux (Ubuntu 18.04+/Debian Buster+/Mint 19+/Fedora 33+/RHEL 7+/CentOS 7+/Arch)
+
 The following tools must exist within your PATH:
 
-* make or ninja
-* cmake (>= 3.3)
-* g++ (>= 9.3) or clang++ (>= 10.0)
+* make
+* cmake (>= 3.3.0)
+* g++ (>= 4.7) or clang++ (>= 6.0)
+* asciidoctor (>= 2.0)
 
 The following libraries are required:
 
-* Qt 5 (>= 5.9.5): qtbase and qttools5
+* Qt 5 (>= 5.9.5): qtbase5, qtbase5-private, libqt5svg5, qttools5, qt5-image-formats-plugins
 * botan (>= 2.11)
-* zlib
-* libxi, libxtst, qtx11extras (optional for auto-type on X11)
 * libargon2
-* readline (for cli history)
-* pcsc-lite (Linux only)
+* zlib
+* minizip
+* readline (for completion in cli)
+* qtx11extras, libxi, and libxtst (for auto-type on X11)
 * qrencode
-* asciidoctor (>= 2.0)
+* libusb-1.0, pcsc-lite (Linux only for Yubikey support)
 
 # Build Options
 
@@ -28,6 +34,7 @@ KeePassXC comes with a variety of build options that can turn on/off features. M
 -DWITH_XC_BROWSER=[ON|OFF] Enable/Disable KeePassXC-Browser extension support (default: OFF)
 -DWITH_XC_NETWORKING=[ON|OFF] Enable/Disable Networking support (e.g., favicon downloading) (default: OFF)
 -DWITH_XC_SSHAGENT=[ON|OFF] Enable/Disable SSHAgent support (default: OFF)
+-DWITH_XC_FDOSECRETS=[ON|OFF] (Linux Only) Enable/Disable Freedesktop.org Secrets Service support (default:OFF)
 -DWITH_XC_KEESHARE=[ON|OFF] Enable/Disable KeeShare group synchronization extension (default: OFF)
 -DWITH_XC_ALL=[ON|OFF] Enable/Disable compiling all plugins above (default: OFF)
 
@@ -51,9 +58,9 @@ KeePassXC comes with a variety of build options that can turn on/off features. M
 ## 1. Setup your build environment
 
 Use the following guides to setup your build environment:
-* [Linux (Ubuntu/Fedora/RHEL/CentOS/Arch)](Set-up-Build-Environment-on-Linux)
-* [MacOS 10.15+](Set-up-Build-Environment-on-OS-X)
-* [Windows 10/11](Set-up-Build-Environment-on-Windows).
+* [Linux](Set-up-Build-Environment-on-Linux)
+* [MacOS](Set-up-Build-Environment-on-OS-X)
+* [Windows](Set-up-Build-Environment-on-Windows).
 
 ## 2. Building
 ### Linux
@@ -100,11 +107,13 @@ cmake -DCMAKE_OSX_ARCHITECTURES=x86_64 \
 make -j8 package
 ```
 #### Notes:
-If you installed via Homebrew, you should be able to compile KeePassXC this way, but if CMake fails to find your Qt installation, you can specify it manually by adding the following parameter:
+If you installed Qt5 via Homebrew, you should be able to compile KeePassXC without any changes. If CMake fails to find your Qt installation, you can specify it manually by adding the following parameter:
 
-- `-DCMAKE_PREFIX_PATH=/usr/local/opt/qt/lib/cmake`
+`-DCMAKE_PREFIX_PATH=/usr/local/opt/qt/lib/cmake`
 
 (or whatever your Qt installation path is)
+
+When building with ASAN support on macOS, you need to use `export ASAN_OPTIONS=detect_leaks=0` before running the tests (LSAN is no supported on macOS).
 
 ### Windows
 In a _MSYS2 MinGW_ terminal (*not* _MSYS2 MSYS_ which is the default), download and unpack the source code as described in the [Linux](#linux) section, change into the source code directory and run:
@@ -112,9 +121,14 @@ In a _MSYS2 MinGW_ terminal (*not* _MSYS2 MSYS_ which is the default), download 
 ```
 mkdir build
 cd build
-cmake -G"MSYS Makefiles" -DWITH_XC_ALL=ON -DCMAKE_BUILD_TYPE=Release ..
+cmake -DWITH_XC_ALL=ON -DCMAKE_BUILD_TYPE=Release ..
 make -j8 package
 ```
+
+#### Notes:
+If you are using MSVC, you may have to specify your Vcpkg toolchain by adding the following CMake parameter: `-DCMAKE_TOOLCHAIN_FILE=C:\vcpkg\scripts\buildsystems\vcpkg.cmake`
+
+If you are using MSYS2, you may have to add ```-G "MSYS Makefiles"``` to the beginning of the cmake command.
 
 ## 3. Running tests
 If you compiled KeePassXC with the CMake flags `-DWITH_TESTS=ON` and `-DWITH_GUI_TESTS=ON`, you can run our unit test suite with:
