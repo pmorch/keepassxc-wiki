@@ -26,7 +26,7 @@ KeePassXC provides a pre-built dependency bundle to save time building them your
 
 2. Open a command prompt to the vcpkg directory and run the following command. This will take up to an hour to complete the build process. 
 
-`.\vcpkg.exe install argon2 botan minizip qt5 qt5-svg qt5-tools qt5-imageformats readline zlib libqrencode --triplet=x64-windows`
+`.\vcpkg.exe install argon2 botan minizip qt5 qt5-svg qt5-tools qt5-imageformats qt5-translations readline zlib libqrencode --triplet=x64-windows`
 
 ### Install Asciidoctor
 1. Download and install Ruby without devkit: https://rubyinstaller.org/downloads/
