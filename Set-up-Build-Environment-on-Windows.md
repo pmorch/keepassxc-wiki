@@ -15,7 +15,7 @@ We recommend building KeePassXC using Visual Studio to maximize feature availabi
 ### Install vcpkg and Dependencies
 **Recommended Option:**
 
-KeePassXC provides a pre-built dependency bundle to save time building them yourself. Simply download and unzip the pre-built dependency package to a folder of your choice. Download here: https://kpxcstorage.blob.core.windows.net/vcpkg/vcpkg-export-20220310-221613.zip
+KeePassXC provides a pre-built dependency bundle to save time building them yourself. Simply download and unzip the pre-built dependency package to a folder of your choice. Download here: https://kpxcstorage.blob.core.windows.net/vcpkg/vcpkg-export.zip
 
 **Alternative Option:**
 1. Download and install vcpkg: https://vcpkg.io/en/getting-started.html
