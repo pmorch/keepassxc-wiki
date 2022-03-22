@@ -32,8 +32,8 @@ On **Debian/Ubuntu**:
 ```bash
 sudo apt install qtbase5-dev qtbase5-private-dev qttools5-dev qttools5-dev-tools \
     libqt5svg5-dev libargon2-dev libminizip-dev libbotan-2-dev libqrencode-dev \
-    zlib1g-dev asciidoctor libreadline-dev libpcsclite-dev libxi-dev libxtst-dev \
-    libqt5x11extras5-dev
+    zlib1g-dev asciidoctor libreadline-dev libpcsclite-dev libusb-1.0-0-dev \
+    libxi-dev libxtst-dev  libqt5x11extras5-dev
 ```
 **Ubuntu 18.04 and below** replace ```libargon2-dev``` with ```libargon2-0-dev```
 
@@ -42,8 +42,8 @@ On **Fedora/RHEL/CentOS**:
 ```bash
 sudo dnf install qt5-qtbase-devel qt5-qtbase-private-devel qt5-linguist qt5-qttools \
     qt5-qtsvg-devel libargon2-devel qrencode-devel botan2-devel readline-devel \
-    zlib-devel rubygem-asciidoctor pcsc-lite-devel libXi-devel libXtst-devel \
-    qt5-qtx11extras-devel
+    zlib-devel rubygem-asciidoctor pcsc-lite-devel libusb1-devel libXi-devel \
+    libXtst-devel qt5-qtx11extras-devel
 ```
 
 **CentOS** requires more up-to-date packages, provided here: https://copr.fedorainfracloud.org/coprs/bugzy/keepassxc/
@@ -51,7 +51,7 @@ sudo dnf install qt5-qtbase-devel qt5-qtbase-private-devel qt5-linguist qt5-qtto
 On **Arch Linux**:
 ```bash
 sudo pacman -S qt5-base qt5-tools argon2 botan qrencode zlib asciidoctor readline \
-    pcsclite libxi libxtst qt5-x11extras
+    pcsclite libusb libxi libxtst qt5-x11extras
 ```
 
 ### Update your environment regularly
