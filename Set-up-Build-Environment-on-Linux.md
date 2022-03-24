@@ -43,7 +43,7 @@ On **Fedora/RHEL/CentOS**:
 sudo dnf install qt5-qtbase-devel qt5-qtbase-private-devel qt5-linguist qt5-qttools \
     qt5-qtsvg-devel libargon2-devel qrencode-devel botan2-devel readline-devel \
     zlib-devel rubygem-asciidoctor pcsc-lite-devel libusb1-devel libXi-devel \
-    libXtst-devel qt5-qtx11extras-devel
+    libXtst-devel qt5-qtx11extras-devel minizip-compat-devel
 ```
 
 **CentOS** requires more up-to-date packages, provided here: https://copr.fedorainfracloud.org/coprs/bugzy/keepassxc/
@@ -51,7 +51,7 @@ sudo dnf install qt5-qtbase-devel qt5-qtbase-private-devel qt5-linguist qt5-qtto
 On **Arch Linux**:
 ```bash
 sudo pacman -S qt5-base qt5-tools argon2 botan qrencode zlib asciidoctor readline \
-    pcsclite libusb libxi libxtst qt5-x11extras
+    pcsclite libusb libxi libxtst qt5-x11extras minizip
 ```
 
 ### Update your environment regularly
