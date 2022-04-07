@@ -59,7 +59,7 @@ KeePassXC comes with a variety of build options that can turn on/off features. M
 
 Use the following guides to setup your build environment:
 * [Linux](Set-up-Build-Environment-on-Linux)
-* [MacOS](Set-up-Build-Environment-on-OS-X)
+* [MacOS](Set-up-Build-Environment-on-macOS)
 * [Windows](Set-up-Build-Environment-on-Windows).
 
 ## 2. Building
