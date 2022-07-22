@@ -78,23 +78,12 @@ mkdir build
 cd build
 cmake -DWITH_XC_ALL=ON -DCMAKE_BUILD_TYPE=Release ..
 make -j8
-make DESTDIR=~/.local install
+sudo make install
 ```
-This will build the KeePassXC binaries and install them to `~/.local`. You can of course specify any other installation directory or omit `DESTDIR` completely, in which case it will install to `/usr` (use `sudo` for that).
-
 If you don't want to install KeePassXC at all, you can also run it directly from the build directory:
 ```
 ./src/keepassxc
 ```
-
-#### Notes:
-If you are experiencing issues with icons not showing up in the KeePassXC user interface, you may want to set the data directory during compilation manually with the following CMake parameter:
-
-- `-DCMAKE_INSTALL_DATADIR="$HOME/.local/share"`
-
-or
-
-- `-DCMAKE_INSTALL_DATADIR="/usr/share"`
 
 ### macOS
 Download and unpack the source code as described in the [Linux](#linux) section, change into the source code directory and run:
