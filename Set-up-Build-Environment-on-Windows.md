@@ -20,10 +20,6 @@ KeePassXC provides a pre-built dependency bundle to save time building them your
 **Alternative Option:**
 1. Download and install vcpkg: https://vcpkg.io/en/getting-started.html
 
-2. From the KeePassXC source directory, navigate to `utils\vcpkg_ports`. Copy all folders within this directory to your vcpkg ports subfolder.
-
-![image](https://user-images.githubusercontent.com/2809491/157793947-c248b8e1-e1e2-4872-8ffa-45691f1d3123.png)
-
 2. Open a command prompt to the vcpkg directory and run the following command. This will take up to an hour to complete the build process. 
 
 `.\vcpkg.exe install argon2 botan minizip qt5 qt5-svg qt5-tools qt5-imageformats qt5-translations readline zlib libqrencode --triplet=x64-windows`
